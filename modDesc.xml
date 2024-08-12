@@ -4,7 +4,7 @@
     <version>1.0.0.0</version>
     <title>
         <en>Variable Pickup Width</en>
-        <de>Variable Aufnahmebreite</de>
+        <de>Variable Pickupbreite</de>
     </title>
     <description>
         <en>
@@ -45,7 +45,7 @@ For license, feedback and additional VPW machinery, please visit: https://github
 ]]>
         </en>
         <de>
-<![CDATA[Hast Du dir auch schon einmal geünscht, dass die Aufnahmebreite von Geräten etwas breiter wäre? Variable Aufnahmebreite (VPW von engl. "Variable Pickup Width") ist die Lösung für Dich!
+<![CDATA[Hast Du dir auch schon einmal gewünscht, dass die Arbeitsbreite der Pickup von Geräten etwas größer wäre? Variable Pickupbreite (VPW von engl. "Variable Pickup Width") ist die Lösung für Dich!
 
 Diese Mod fügt für mehrere Arten von Geräten aus dem Basisspiel einen auswählbaren Arbeitsmodus hinzu, der dazu bestimmt ist, etwas vom Boden aufzuheben. Jedes modifizierte Gerät erlaubt es, eine von vier Arbeitsbreiten einzustellen, während man das Gerät verwendet;
 - Standard Arbeitsbreite (Standard)
