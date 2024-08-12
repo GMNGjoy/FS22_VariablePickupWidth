@@ -1,63 +1,60 @@
-# Forage Harvester Straw Pickup
-Gameplay update to ForageHarvesters Pickup headers by creating a custom `FORAGEPICKUP` _fruitTypeCategory_ to allow straw to be picked up from basegame straw-producing fields (`WHEAT BARLEY OAT`), as well as crops producing straw from the [Extended Straw Crops](https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=253483&title=fs2022) mod (`CANOLA CORN SORGHUM SOYBEAN SUNFLOWER`)
+# Variable Pickup Width
+A new frontier in machinery enhancements has been achieved - the ability to alter the width of your pickup-related equipment from within the tractor, while on the go! Want just that little bit extra because you made monster windrows? _Bonus_ or _Enhanced_ mode is for you. Don't feel like windrowing at all today? the _Virtual Windrower_ setting is where it's at!
 
-- Customized basegame forage harvester headers with the new `FORAGEPICKUP` _fruitTypeCategory_ have been added to the store to enable the straw pickup functionality to be used - all headers are Giants assets with XML modifications.
-
-- LUA script is used to force-load new _fruitTypes_ &amp; _fillTypes_, which is based off of a similar script from Jos Modding in the [Swathing Addon](https://www.farming-simulator.com/mod.php?lang=en&country=sk&mod_id=267323). That code adapted to this purpose & used with permission.
-
-**PC only** due to script usage.
-
-## Description from the ModDesc
-> Adds in the ability to pickup straw from fields that generate straw from 
-the crop, to all basegame forage pickup headers.
-> 
-> All modified headers have color selection, slight speed increase, and slight working width increase.
-Since the Forage Harvester is chopping the straw, you will also get a slight 10% increase in straw.
-> 
-> Headers:
-> - Claas PICKUP 300 +
-> - Kemper 3003 +
-> - John Deere Header 639 +
-> - Krone EasyFlow 300 S +
-> 
-> Headers cost $1 more than basegame
+### From the ModDesc
+> Have you ever wished that the pickup area was just a bit wider? Variable Pickup Width (VPW) is the solution for you!
+>
+> This mod adds a custom workMode to multiple types of basegame equipment that are designed to "pick up" something from the ground. Each tool has been updated to have a workMode that you can select while using the machine, allowing you to select from 4 different pickup widths:
+> - Default Pickup (default)
+> - Bonus Pickup (+2m)
+> - Extended Pickup (+4m)
+> - Virtual Windrower (20m)
+>
+> Balers:
+> - Poettenger Impress 125F Pro VPW
+> - Massey Ferguson 1840 VPW
+> - Claas Quadrant 5300 HD VPW
+> - Claas Rollant455 Uniwrap VPW
+> - CaseIh LB436 HD VPW
+> - Krone Big Pack 1290 HD VPW
+>
+> Forage Wagons:
+> - Poettenger Boss Alpine 251 VPW
+> - Poettenger Faro 1050 D VPW
+> - Schuitemaker Rapide 580V VPW
+> - Poettenger Jumbo 10020 Tridem VPW
+> - CLAAS CARGOS 9500 VPW
+>
+> Pickup Headers:
+> - Kemper N3003 VPW
+>
+> Stone Pickers:
+> - Elho Scorpio 550 VPW
+>
+> Additionally, any VPW tool that also has a fill capacity will also have selectable capacity upgrades in the shop with relative discharge rates - but you'll have to pay for that extra capacity!
+>
+> Each item costs $1 more than basegame, works a bit faster and has full color selection.
 
 
 ## Installation Instructions
-1. Download this package from GitHub on the releases page, save the `FS22_ForageStrawPickup.zip` into your mod folder.
-2. Launch the game, and select the mod to load into the game
-3. Purchase one of the pickup headers included in this mod, attach to your favorite Forage Harvester, and go pickup all that straw! 
-4. All variations of the pickup headers are faster, wider, and you get more straw than other methods.
+1. Download this package from ModHub or GitHub on the releases page, save the `FS22_VariablePickupWidth.zip` into your mod folder.
+2. Launch the game, and activate the mod.
+_Enjoy!_
 
 
 ## Screenshots
 
-![Forage Pickup Header](/_screenshots/forageStrawPickup_1.png)
-_Forage Harvester in the field picking up straw_
+![Massey Ferguson 1840 VPW](/_screenshots/babyBalerVpw.png)
+_Massey Ferguson 1840 showing off the VPW pickup_
 
-![Forage Pickup Header](/_screenshots/forageStrawPickup_2.png)
-_Forage Harvester in the field picking up straw. Did you notice that the header is Fendt Red?_
+![Claas Rollant455 Uniwrap VPW](/_screenshots/claasBalerVpw.png)
+_Claas Rollant455 Uniwrap showing off the VPW pickup_
 
-![Forage Pickup Header](/_screenshots/forageStrawPickup_3.png)
-_Forage Harvester in the field picking up straw, yes that's straw in the trailer_
+![Krone Big Pack 1290 HD VPW](/_screenshots/kroneVpw.png)
+_Krone Big Pack 1290 HD showing off the VPW pickup_
 
-![Forage Pickup Header](/_screenshots/forageStrawPickup_4.png)
-_Forage Harvester in the field picking up straw; Beauty shot!_
+![Poplar BioBaler Pro with VPW](/_screenshots/SchuitemakerVpw.png)
+_Schuitemaker Rapide 580V  showing off the VPW pickup_
 
-![Forage Pickup Header](/_screenshots/forageStrawPickup_5.png)
-_Included in the pack are the 4 basegame pickup headers, modified to pickup BOTH straw &amp; grass._
-
-![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedCorn.png)
-_Forage Harvester picking up straw from a corn field, thanks to the Extended Straw Crops mod._
-
-![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedCanola.png)
-_Forage Harvester picking up straw from a canola field, thanks to the Extended Straw Crops mod._
-
-![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedSorghum.png)
-_Forage Harvester picking up straw from a sorghum field, thanks to the Extended Straw Crops mod._
-
-![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedSoybeans.png)
-_Forage Harvester picking up straw from a soybean field, thanks to the Extended Straw Crops mod._
-
-![Forage Pickup Straw w/ Extended Straw Crops](/_screenshots/forageStrawPickup_extendedSunflower.png)
-_Forage Harvester picking up straw from a sunflower field, thanks to the Extended Straw Crops mod._
+![Schuitemaker Rapide 580V VPW showing the workMode](/_screenshots/VPW_menuOptions.png)
+_Schuitemaker Rapide 580V  VPW showing the workMode to switch between VPW pickup sizes_
