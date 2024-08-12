@@ -53,8 +53,8 @@ _Claas Rollant455 Uniwrap showing off the VPW pickup_
 ![Krone Big Pack 1290 HD VPW](/_screenshots/kroneVpw.png)
 _Krone Big Pack 1290 HD showing off the VPW pickup_
 
-![Poplar BioBaler Pro with VPW](/_screenshots/SchuitemakerVpw.png)
-_Schuitemaker Rapide 580V  showing off the VPW pickup_
+![Schuitemaker Rapide 580V VPW](/_screenshots/schuitemakerVpw.png)
+_Schuitemaker Rapide 580Vshowing off the VPW pickup_
 
 ![Schuitemaker Rapide 580V VPW showing the workMode](/_screenshots/VPW_menuOptions.png)
 _Schuitemaker Rapide 580V  VPW showing the workMode to switch between VPW pickup sizes_
