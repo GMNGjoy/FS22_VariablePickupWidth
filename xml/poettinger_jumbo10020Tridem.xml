@@ -8,7 +8,7 @@
             <set path="vehicle#type" value="forageWagonWorkMode"/>
             <set path="vehicle.storeData.name" value="JUMBO 10020 Tridem VPW"/>
             <set path="vehicle.storeData.price" value="123501"/>
-            <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
+<set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
             <set path="vehicle.base.speedLimit#value" value="20"/>
 
             <!-- reset the work areas to VPW defaults -->
@@ -223,7 +223,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0)#capacity" value="93200"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0)#allowAILoading" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0).autoAimTargetNode#node" value="autoAimTargetNode"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTarget"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="2.608"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0).autoAimTargetNode#endZ" value="-4.531"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0).autoAimTargetNode#invert" value="false"/>
@@ -236,7 +236,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#capacity" value="93200"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0)#allowAILoading" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#node" value="autoAimTargetNode"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTarget"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="2.608"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#endZ" value="-4.531"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(0).autoAimTargetNode#invert" value="false"/>
@@ -246,6 +246,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1)#capacity" value="20"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1)#showInShop" value="false"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1)#uiPrecision" value="2"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1).exactFillRootNode#node" value="exactFillRootNodeAdditives"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#node" value="silageAdditivesTank_vis"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#visibilityActive" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#visibilityInactive" value="false"/>
@@ -258,9 +259,9 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0)#allowAILoading" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0)#updateMass" value="false"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).autoAimTargetNode#node" value="autoAimTargetNode"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="0.662"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).autoAimTargetNode#endZ" value="-1.518"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTarget"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="2.608"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).autoAimTargetNode#endZ" value="-4.531"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).autoAimTargetNode#invert" value="false"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4).fillUnits.fillUnit(0).autoAimTargetNode#startPercentage" value="28"/>
 
@@ -271,7 +272,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0)#capacity" value="466000"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0)#allowAILoading" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).autoAimTargetNode#node" value="autoAimTargetNode"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTarget"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="2.608"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).autoAimTargetNode#endZ" value="-4.531"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).autoAimTargetNode#invert" value="false"/>
@@ -281,6 +282,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1)#capacity" value="100"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1)#showInShop" value="false"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1)#uiPrecision" value="2"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1).exactFillRootNode#node" value="exactFillRootNodeAdditives"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#node" value="silageAdditivesTank_vis"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#visibilityActive" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#visibilityInactive" value="false"/>
