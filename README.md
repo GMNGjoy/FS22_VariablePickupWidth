@@ -54,7 +54,10 @@ _Claas Rollant455 Uniwrap showing off the VPW pickup_
 _Krone Big Pack 1290 HD showing off the VPW pickup_
 
 ![Schuitemaker Rapide 580V VPW](/_screenshots/schuitemakerVpw.png)
-_Schuitemaker Rapide 580Vshowing off the VPW pickup_
+_Schuitemaker Rapide 580V showing off the VPW pickup_
 
 ![Schuitemaker Rapide 580V VPW showing the workMode](/_screenshots/VPW_menuOptions.png)
 _Schuitemaker Rapide 580V  VPW showing how to use workMode to switch between VPW pickup sizes_
+
+![Elho Scorpio 550 VPW](/_screenshots/stonePickerVpw.png)
+_Elho Scorpio 550 showing off the VPW pickup_
