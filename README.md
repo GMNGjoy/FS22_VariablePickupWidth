@@ -57,4 +57,4 @@ _Krone Big Pack 1290 HD showing off the VPW pickup_
 _Schuitemaker Rapide 580Vshowing off the VPW pickup_
 
 ![Schuitemaker Rapide 580V VPW showing the workMode](/_screenshots/VPW_menuOptions.png)
-_Schuitemaker Rapide 580V  VPW showing the workMode to switch between VPW pickup sizes_
+_Schuitemaker Rapide 580V  VPW showing how to use workMode to switch between VPW pickup sizes_
