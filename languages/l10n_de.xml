@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors>
+        <translationContributor></translationContributor>
+    </translationContributors>
+    <texts>
+        <text name="workMode_default" text="Standardmäßige Abholung" />
+        <text name="workMode_bonus" text="Bonus-Abholung" />
+        <text name="workMode_extended" text="Erweiterte Abholung" />
+        <text name="workMode_unreal" text="Virtueller Schwadleger" />
+        <text name="function_variablePickupWidth" text="Der Aufnahmevorsatz dieses Werkzeugs verfügt über eine variable Arbeitsbreite." />
+
+        <text name="configuration_capacity" text="Kapazität" />
+        <text name="configuration_doubleCapacity" text="Doppelte Kapazität" />
+        <text name="configuration_doubleCapacityAdditives" text="Doppelte Kapazität mit Zusatzstoffen" />
+        <text name="configuration_unrealCapacity" text="Lächerliche Kapazität" />
+        <text name="configuration_unrealCapacityAdditives" text="Lächerliche Kapazität mit Zusatzstoffen" />
+
+        <text name="brand_poettinger" text="PÖTTINGER" />
+        <text name="brand_masseyFerguson" text="Massey Ferguson" />
+        <text name="brand_claas" text="Claas" />
+        <text name="brand_kemper" text="Kemper" />
+        <text name="brand_elho" text="Elho" />
+        <text name="brand_krone" text="Krone" />
+        <text name="brand_schuitemaker" text="Schuitemaker" />
+    </texts>
+</l10n>

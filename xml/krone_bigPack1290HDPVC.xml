@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="balerWorkMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="$data/vehicles/krone/bigPack1290HDPVC/bigPack1290HDPVC.xml">
+        <attributes>
+            <set path="vehicle#type" value="balerWorkMode"/>
+            <set path="vehicle.storeData.name" value="BigPack 1290 HD VPW"/>
+            <set path="vehicle.storeData.price" value="155001"/>
+            <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
+            <set path="vehicle.base.speedLimit#value" value="22"/>
+
+            <!-- make the pickup area bigger -->
+            <set path="vehicle.base.objectChanges.objectChange(3)#node" value="workAreaStart"/>
+            <set path="vehicle.base.objectChanges.objectChange(3)#translationActive" value="1.5 0 2.845"/>
+            <set path="vehicle.base.objectChanges.objectChange(4)#node" value="workAreaWidth"/>
+            <set path="vehicle.base.objectChanges.objectChange(4)#translationActive" value="-1.5 0 2.845"/>
+            <set path="vehicle.base.objectChanges.objectChange(5)#node" value="workAreaHeight"/>
+            <set path="vehicle.base.objectChanges.objectChange(5)#translationActive" value="1.5 0 0.845"/>
+
+            <!-- add the workModes -->
+            <set path="vehicle.workModes.workMode(0)#name" value="$l10n_workMode_default"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(1)#name" value="$l10n_workMode_bonus"/>
+            <set path="vehicle.workModes.workMode(1).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(1)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(2)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(2)#name" value="$l10n_workMode_extended"/>
+            <set path="vehicle.workModes.workMode(2).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(2)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(3)#name" value="$l10n_workMode_unreal"/>
+            <set path="vehicle.workModes.workMode(3).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="1"/>
+
+            <!-- add the workMode animations -->
+            <set path="vehicle.animations.animation(5)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.animations.animation(5).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(5).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(0)#endTrans" value="1.5 0 2.845"/>
+            <set path="vehicle.animations.animation(5).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(5).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(1)#endTrans" value="-1.5 0 2.845"/>
+            <set path="vehicle.animations.animation(5).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(5).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(2)#endTrans" value="1.5 0 0.845"/>
+
+            <set path="vehicle.animations.animation(6)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.animations.animation(6).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(6).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(0)#endTrans" value="2.5 0 2.845"/>
+            <set path="vehicle.animations.animation(6).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(6).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(1)#endTrans" value="-2.5 0 2.845"/>
+            <set path="vehicle.animations.animation(6).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(6).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(2)#endTrans" value="2.5 0 0.845"/>
+
+            <set path="vehicle.animations.animation(7)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.animations.animation(7).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(7).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(7).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(0)#endTrans" value="4.5 0 2.845"/>
+            <set path="vehicle.animations.animation(7).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(7).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(7).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(1)#endTrans" value="-4.5 0 2.845"/>
+            <set path="vehicle.animations.animation(7).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(7).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(7).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(2)#endTrans" value="4.5 0 0.845"/>
+
+            <set path="vehicle.animations.animation(8)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.animations.animation(8).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(8).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(8).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(0)#endTrans" value="10.0 0 2.7"/>
+            <set path="vehicle.animations.animation(8).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(8).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(8).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(1)#endTrans" value="-10.0 0 2.7"/>
+            <set path="vehicle.animations.animation(8).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(8).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(8).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(2)#endTrans" value="10.0 0 0.845"/>
+
+            <set path="vehicle.animations.animation(9)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.animations.animation(9).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(9).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(0)#endTrans" value="1.5 0 2.845"/>
+            <set path="vehicle.animations.animation(9).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(9).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(1)#endTrans" value="-1.5 0 2.845"/>
+            <set path="vehicle.animations.animation(9).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(9).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(2)#endTrans" value="1.5 0 0.845"/>
+
+            <set path="vehicle.animations.animation(10)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.animations.animation(10).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(10).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(0)#endTrans" value="2.5 0 2.845"/>
+            <set path="vehicle.animations.animation(10).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(10).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(1)#endTrans" value="-2.5 0 2.845"/>
+            <set path="vehicle.animations.animation(10).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(10).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(2)#endTrans" value="2.5 0 0.845"/>
+
+            <set path="vehicle.animations.animation(11)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.animations.animation(11).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(11).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(11).part(0)#endTrans" value="3.5 0 2.845"/>
+            <set path="vehicle.animations.animation(11).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(11).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(11).part(1)#endTrans" value="-3.5 0 2.845"/>
+            <set path="vehicle.animations.animation(11).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(11).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(11).part(2)#endTrans" value="3.5 0 0.845"/>
+
+            <set path="vehicle.animations.animation(12)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.animations.animation(12).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(12).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(12).part(0)#endTrans" value="10.0 0 2.845"/>
+            <set path="vehicle.animations.animation(12).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(12).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(12).part(1)#endTrans" value="-10.0 0 2.845"/>
+            <set path="vehicle.animations.animation(12).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(12).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(12).part(2)#endTrans" value="10.0 0 0.845"/>
+
+            <!-- make sure it never misses -->
+            <set path="vehicle.baler#maxPickupLitersPerSecond" value="5000"/>
+            <set path="vehicle.groundReferenceNodes.groundReferenceNode(0)#threshold" value="1.0"/>
+
+            <!-- add a material for the sticker -->
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(3)#name" value="colorMat2"/>
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(3)#value" value="KRONE_BLACK2"/>
+            <set path="vehicle.baseMaterial.material(3)#name" value="bigPack1290HDPVCDecals_mat7"/>
+            <set path="vehicle.baseMaterial.material(3)#baseNode" value="0>0|9|9"/>
+            <set path="vehicle.baseMaterial.material(3).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(3).shaderParameter(0)#value" value="KRONE_GREEN1"/>
+
+            <!-- base material configuration -->
+            <remove path="vehicle.baseMaterialConfigurations" />
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <!-- <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/> -->
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_krone|$l10n_ui_colorGreen"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="KRONE_GREEN1"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#params" value="$l10n_brand_krone|$l10n_ui_colorYellow"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#color" value="KRONE_YELLOW1"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#params" value="$l10n_brand_krone|$l10n_ui_colorBlack"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#color" value="KRONE_BLACK2"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="bigPack1290HDPVC_B_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#name" value="bigPack1290HDPVC_A_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
+
+
+            <!-- design material configuration -->
+            <set path="vehicle.designMaterialConfigurations#title" value="Detail Color"/>
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_krone|$l10n_ui_colorYellow"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="KRONE_YELLOW1"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#params" value="$l10n_brand_krone|$l10n_ui_colorGreen"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#color" value="KRONE_GREEN1"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#params" value="$l10n_brand_krone|$l10n_ui_colorBlack"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#color" value="KRONE_BLACK2"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="bigPack1290HDPVC_B_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat3"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#name" value="bigPack1290HDPVC_A_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#shaderParameter" value="colorMat3"/>
+            <set path="vehicle.designMaterialConfigurations.material(2)#name" value="bigPack1290HDPVCDecals_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(2)#shaderParameter" value="colorMat0"/>
+
+
+            <!-- design material configuration: stickers -->
+            <set path="vehicle.designMaterial2Configurations#title" value="Tertiary Color"/>
+            <set path="vehicle.designMaterial2Configurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#params" value="$l10n_brand_krone|$l10n_ui_colorBlack"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#color" value="KRONE_BLACK2"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(1)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(1)#params" value="$l10n_brand_krone|$l10n_ui_colorGreen"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(1)#color" value="KRONE_GREEN1"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(2)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(2)#params" value="$l10n_brand_krone|$l10n_ui_colorYellow"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(2)#color" value="KRONE_YELLOW1"/>
+            <set path="vehicle.designMaterial2Configurations.material(0)#name" value="bigPack1290HDPVC_B_mat"/>
+            <set path="vehicle.designMaterial2Configurations.material(0)#shaderParameter" value="colorMat1"/>
+            <set path="vehicle.designMaterial2Configurations.material(1)#name" value="bigPack1290HDPVC_B_mat"/>
+            <set path="vehicle.designMaterial2Configurations.material(1)#shaderParameter" value="colorMat2"/>
+
+            <!-- design material configuration: tines -->
+            <set path="vehicle.designMaterial3Configurations#title" value="Logo Color"/>
+            <set path="vehicle.designMaterial3Configurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(0)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(0)#params" value="$l10n_brand_krone|$l10n_ui_colorGreen"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(0)#color" value="KRONE_GREEN1"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(1)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(1)#params" value="$l10n_brand_krone|$l10n_ui_colorYellow"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(1)#color" value="KRONE_YELLOW1"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(2)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(2)#params" value="$l10n_brand_krone|$l10n_ui_colorBlack"/>
+            <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(2)#color" value="KRONE_BLACK2"/>
+            <set path="vehicle.designMaterial3Configurations.material(0)#name" value="bigPack1290HDPVCDecals_mat7"/>
+            <set path="vehicle.designMaterial3Configurations.material(0)#shaderParameter" value="colorMat0"/>
+
+            <!-- rim configuration -->
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.rimColorConfigurations#price" value="0"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#params" value="$l10n_brand_krone|$l10n_ui_colorBlack"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#color" value="KRONE_BLACK2"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#params" value="$l10n_brand_krone|$l10n_ui_colorGreen"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#color" value="KRONE_GREEN1"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#params" value="$l10n_brand_krone|$l10n_ui_colorYellow"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#color" value="KRONE_YELLOW1"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>KRONE BigPack 1290 VPW</name>
+        <image>icons/store_lb436H.png</image>
+        <brand>KRONE</brand>
+        <category>balers</category>
+    </storeData>
+</vehicle>

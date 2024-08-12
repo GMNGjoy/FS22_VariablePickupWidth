@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="stonePickerWorkMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="$data/vehicles/elho/scorpio550/scorpio550.xml">
+        <attributes>
+            <!-- update the values -->
+            <set path="vehicle#type" value="stonePickerWorkMode" />
+            <set path="vehicle.storeData.name" value="Scorpio 550 VPW"/>
+            <set path="vehicle.storeData.price" value="52001"/>
+            <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
+            <set path="vehicle.base.speedLimit#value" value="20"/>
+
+            <!-- add the workModes -->
+            <set path="vehicle.workModes.workMode(0)#name" value="$l10n_workMode_default"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(1)#name" value="$l10n_workMode_bonus"/>
+            <set path="vehicle.workModes.workMode(1).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(1)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(2)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(2)#name" value="$l10n_workMode_extended"/>
+            <set path="vehicle.workModes.workMode(2).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(2)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(3)#name" value="$l10n_workMode_unreal"/>
+            <set path="vehicle.workModes.workMode(3).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="1"/>
+
+            <!-- add the workMode animations -->
+            <set path="vehicle.animations.animation(3)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.animations.animation(3).part(0)#node" value="workAreaStart01"/>
+            <set path="vehicle.animations.animation(3).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(3).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(3).part(0)#endTrans" value="2.54877 0 1.54416"/>
+            <set path="vehicle.animations.animation(3).part(1)#node" value="workAreaWidth01"/>
+            <set path="vehicle.animations.animation(3).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(3).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(3).part(1)#endTrans" value="2.35358 0 1.87861"/>
+            <set path="vehicle.animations.animation(3).part(2)#node" value="workAreaHeight02"/>
+            <set path="vehicle.animations.animation(3).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(3).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(3).part(2)#endTrans" value="-2.55882 0 1.5639"/>
+
+            <set path="vehicle.animations.animation(4)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.animations.animation(4).part(0)#node" value="workAreaStart01"/>
+            <set path="vehicle.animations.animation(4).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(4).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(4).part(0)#endTrans" value="3.528 0 2.115"/>
+            <set path="vehicle.animations.animation(4).part(1)#node" value="workAreaWidth01"/>
+            <set path="vehicle.animations.animation(4).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(4).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(4).part(1)#endTrans" value="3.384 0 2.479"/>
+            <set path="vehicle.animations.animation(4).part(2)#node" value="workAreaHeight02"/>
+            <set path="vehicle.animations.animation(4).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(4).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(4).part(2)#endTrans" value="-3.528 0 2.115"/>
+
+            <set path="vehicle.animations.animation(5)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.animations.animation(5).part(0)#node" value="workAreaStart01"/>
+            <set path="vehicle.animations.animation(5).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(0)#endTrans" value="4.548 0 2.743"/>
+            <set path="vehicle.animations.animation(5).part(1)#node" value="workAreaWidth01"/>
+            <set path="vehicle.animations.animation(5).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(1)#endTrans" value="4.367 0 3.053"/>
+            <set path="vehicle.animations.animation(5).part(2)#node" value="workAreaHeight02"/>
+            <set path="vehicle.animations.animation(5).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(2)#endTrans" value="-4.548 0 2.743"/>
+
+            <set path="vehicle.animations.animation(6)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.animations.animation(6).part(0)#node" value="workAreaStart01"/>
+            <set path="vehicle.animations.animation(6).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(0)#endTrans" value="10.000 0 5.928"/>
+            <set path="vehicle.animations.animation(6).part(1)#node" value="workAreaWidth01"/>
+            <set path="vehicle.animations.animation(6).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(1)#endTrans" value="10.000 0 6.344"/>
+            <set path="vehicle.animations.animation(6).part(2)#node" value="workAreaHeight02"/>
+            <set path="vehicle.animations.animation(6).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(2)#endTrans" value="-10.000 0 5.928"/>
+
+            <set path="vehicle.animations.animation(7)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.animations.animation(7).part(0)#node" value="workAreaStart01"/>
+            <set path="vehicle.animations.animation(7).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(7).part(0)#endTrans" value="2.54877 0 1.54416"/>
+            <set path="vehicle.animations.animation(7).part(1)#node" value="workAreaWidth01"/>
+            <set path="vehicle.animations.animation(7).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(7).part(1)#endTrans" value="2.35358 0 1.87861"/>
+            <set path="vehicle.animations.animation(7).part(2)#node" value="workAreaHeight02"/>
+            <set path="vehicle.animations.animation(7).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(7).part(2)#endTrans" value="-2.55882 0 1.5639"/>
+
+            <set path="vehicle.animations.animation(8)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.animations.animation(8).part(0)#node" value="workAreaStart01"/>
+            <set path="vehicle.animations.animation(8).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(8).part(0)#endTrans" value="3.528 0 2.115"/>
+            <set path="vehicle.animations.animation(8).part(1)#node" value="workAreaWidth01"/>
+            <set path="vehicle.animations.animation(8).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(8).part(1)#endTrans" value="3.384 0 2.479"/>
+            <set path="vehicle.animations.animation(8).part(2)#node" value="workAreaHeight02"/>
+            <set path="vehicle.animations.animation(8).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(8).part(2)#endTrans" value="-3.528 0 2.115"/>
+
+            <set path="vehicle.animations.animation(9)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.animations.animation(9).part(0)#node" value="workAreaStart01"/>
+            <set path="vehicle.animations.animation(9).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(0)#endTrans" value="4.548 0 2.743"/>
+            <set path="vehicle.animations.animation(9).part(1)#node" value="workAreaWidth01"/>
+            <set path="vehicle.animations.animation(9).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(1)#endTrans" value="4.367 0 3.053"/>
+            <set path="vehicle.animations.animation(9).part(2)#node" value="workAreaHeight02"/>
+            <set path="vehicle.animations.animation(9).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(2)#endTrans" value="-4.548 0 2.743"/>
+
+            <set path="vehicle.animations.animation(10)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.animations.animation(10).part(0)#node" value="workAreaStart01"/>
+            <set path="vehicle.animations.animation(10).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(0)#endTrans" value="10.000 0 5.928"/>
+            <set path="vehicle.animations.animation(10).part(1)#node" value="workAreaWidth01"/>
+            <set path="vehicle.animations.animation(10).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(1)#endTrans" value="10.000 0 6.344"/>
+            <set path="vehicle.animations.animation(10).part(2)#node" value="workAreaHeight02"/>
+            <set path="vehicle.animations.animation(10).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(2)#endTrans" value="-10.000 0 5.928"/>
+
+            <!-- add in configuration sets -->
+            <set path="vehicle.configurationSets.configurationSet(0)#name" value="$l10n_configuration_valueDefault"/>
+            <set path="vehicle.configurationSets.configurationSet(0).configuration(0)#name" value="fillUnit"/>
+            <set path="vehicle.configurationSets.configurationSet(0).configuration(0)#index" value="1"/>
+            <set path="vehicle.configurationSets.configurationSet(0).configuration(1)#name" value="dischargeable"/>
+            <set path="vehicle.configurationSets.configurationSet(0).configuration(1)#index" value="1"/>
+
+            <set path="vehicle.configurationSets.configurationSet(1)#name" value="$l10n_configuration_doubleCapacity"/>
+            <set path="vehicle.configurationSets.configurationSet(1).configuration(0)#name" value="fillUnit"/>
+            <set path="vehicle.configurationSets.configurationSet(1).configuration(0)#index" value="2"/>
+            <set path="vehicle.configurationSets.configurationSet(1).configuration(1)#name" value="dischargeable"/>
+            <set path="vehicle.configurationSets.configurationSet(1).configuration(1)#index" value="3"/>
+
+            <set path="vehicle.configurationSets.configurationSet(2)#name" value="$l10n_configuration_unrealCapacity"/>
+            <set path="vehicle.configurationSets.configurationSet(2).configuration(0)#name" value="fillUnit"/>
+            <set path="vehicle.configurationSets.configurationSet(2).configuration(0)#index" value="3"/>
+            <set path="vehicle.configurationSets.configurationSet(2).configuration(1)#name" value="dischargeable"/>
+            <set path="vehicle.configurationSets.configurationSet(2).configuration(1)#index" value="3"/>
+
+            <!-- add in fill unit configurations -->
+            <set path="vehicle.fillUnit.fillUnitConfigurations#name" value="$l10n_configuration_capacity"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(1)#name" value="$l10n_configuration_doubleCapacity"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(1)#price" value="5000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(1).fillUnits.fillUnit(0)#shopDisplayUnit" value="CUBICMETER"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(1).fillUnits.fillUnit(0)#fillTypes" value="STONE"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(1).fillUnits.fillUnit(0)#capacity" value="4000"/>
+
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2)#name" value="$l10n_configuration_unrealCapacity"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2)#price" value="15000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0)#shopDisplayUnit" value="CUBICMETER"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0)#fillTypes" value="STONE"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0)#capacity" value="20000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0)#updateMass" value="false"/>
+
+            <!-- set relative discharge rates -->
+            <remove path="vehicle.dischargeable" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0)#name" value="$l10n_configuration_valueDefault" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0)#node" value="dischargeNode" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0)#emptySpeed" value="800" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0)#fillUnitIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).info#width" value="1.0" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).info#length" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0)#effectClass" value="TipEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0).effectNode(0)#effectNode" value="effectParticleBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0).effectNode(0)#effectClass" value="ParticleEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0).effectNode(0)#materialType" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0).effectNode(1)#effectNode" value="effectGrainBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0).effectNode(1)#materialType" value="unloading" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0).effectNode(1)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0).effectNode(1)#extraDistanceNode" value="dischargeNode" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(0).effectNode(1)#extraDistance" value="1.2" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(1)#effectNode" value="effectSmokeBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(1)#materialType" value="unloadingSmoke" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0).effects.effectNode(1)#fadeTime" value="0.5" />
+
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1)#name" value="$l10n_configuration_doubleCapacity" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0)#node" value="dischargeNode" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0)#emptySpeed" value="1600" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0)#fillUnitIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).info#width" value="1.0" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).info#length" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0)#effectClass" value="TipEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0).effectNode(0)#effectNode" value="effectParticleBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0).effectNode(0)#effectClass" value="ParticleEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0).effectNode(0)#materialType" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0).effectNode(1)#effectNode" value="effectGrainBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0).effectNode(1)#materialType" value="unloading" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0).effectNode(1)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0).effectNode(1)#extraDistanceNode" value="dischargeNode" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(0).effectNode(1)#extraDistance" value="1.2" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(1)#effectNode" value="effectSmokeBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(1)#materialType" value="unloadingSmoke" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(1).dischargeNode(0).effects.effectNode(1)#fadeTime" value="0.5" />
+
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2)#name" value="$l10n_configuration_unrealCapacity" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#node" value="dischargeNode" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#emptySpeed" value="8000" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#fillUnitIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).info#width" value="1.0" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).info#length" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0)#effectClass" value="TipEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0).effectNode(0)#effectNode" value="effectParticleBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0).effectNode(0)#effectClass" value="ParticleEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0).effectNode(0)#materialType" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0).effectNode(1)#effectNode" value="effectGrainBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0).effectNode(1)#materialType" value="unloading" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0).effectNode(1)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0).effectNode(1)#extraDistanceNode" value="dischargeNode" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(0).effectNode(1)#extraDistance" value="1.2" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(1)#effectNode" value="effectSmokeBack" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(1)#materialType" value="unloadingSmoke" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(1)#fadeTime" value="0.5" />
+
+
+            <!-- extra materials -->
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(1)#name" value="colorMat1"/>
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(1)#value" value="0.065 0.065 0.065"/>
+            <set path="vehicle.baseMaterial.material(1)#name" value="scorpio550_mat2"/>
+            <set path="vehicle.baseMaterial.material(1)#baseNode" value="0>0|9|3|1"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#value" value="ELHO_ORANGE1"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(1)#name" value="colorMat1"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(1)#value" value="0.065 0.065 0.065"/>
+
+            <!-- add in base material color selection -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_elho|$l10n_ui_colorOrange"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="ELHO_ORANGE1"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="scorpio550_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#name" value="scorpio550_mat2"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
+
+
+            <!-- design material configuration -->
+            <set path="vehicle.designMaterialConfigurations#title" value="Detail Color"/>
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_elho|$l10n_ui_colorBlack"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="0.065 0.065 0.065"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#params" value="$l10n_brand_elho|$l10n_ui_colorOrange"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#color" value="ELHO_ORANGE1"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="scorpio550_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat1"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#name" value="scorpio550_mat2"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#shaderParameter" value="colorMat1"/>
+
+
+            <!-- rim configurations -->
+            <set path="vehicle.wheels.hubs.colorMat0" value="SHARED_BLACK2"/>
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.rimColorConfigurations#price" value="0"/>
+            <set path="vehicle.rimColorConfigurations#defaultColorIndex" value="8"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#params" value="$l10n_brand_elho|$l10n_ui_colorOrange"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#color" value="ELHO_ORANGE1"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>ELHO Scorpio 550 VPW</name>
+        <image>icons/store_elho_scorpio550.png</image>
+        <brand>ELHO</brand>
+        <category>stonePickers</category>
+    </storeData>
+</vehicle>

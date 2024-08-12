@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="balerWorkMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="$data/vehicles/poettinger/impress125FPro/impress125FPro.xml">
+        <attributes>
+            <!-- update the values -->
+            <set path="vehicle#type" value="balerWorkMode"/>
+            <set path="vehicle.storeData.name" value="IMPRESS 125F PRO VPW"/>
+            <set path="vehicle.storeData.price" value="48001"/>
+            <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
+            <set path="vehicle.base.speedLimit#value" value="20"/>
+
+            <!-- reset the work areas to VPW defaults -->
+            <set path="vehicle.base.objectChanges.objectChange(0)#node" value="workAreaStart"/>
+            <set path="vehicle.base.objectChanges.objectChange(0)#translationActive" value="1.25 0 1.01544"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#translationActive" value="-1.25 0 1.01544"/>
+            <set path="vehicle.base.objectChanges.objectChange(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.base.objectChanges.objectChange(2)#translationActive" value="1.25 0 -0.98456"/>
+
+            <!-- add the workModes -->
+            <set path="vehicle.workModes.workMode(0)#name" value="$l10n_workMode_default"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(1)#name" value="$l10n_workMode_bonus"/>
+            <set path="vehicle.workModes.workMode(1).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(1)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(2)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(2)#name" value="$l10n_workMode_extended"/>
+            <set path="vehicle.workModes.workMode(2).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(2)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(3)#name" value="$l10n_workMode_unreal"/>
+            <set path="vehicle.workModes.workMode(3).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="1"/>
+
+            <!-- add the workMode animations -->
+            <set path="vehicle.animations.animation(4)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.animations.animation(4).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(4).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(4).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(4).part(0)#endTrans" value="1.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(4).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(4).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(4).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(4).part(1)#endTrans" value="-1.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(4).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(4).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(4).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(4).part(2)#endTrans" value="1.25 0 -0.98456"/>
+
+            <set path="vehicle.animations.animation(5)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.animations.animation(5).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(5).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(0)#endTrans" value="2.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(5).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(5).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(1)#endTrans" value="-2.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(5).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(5).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(5).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(5).part(2)#endTrans" value="2.25 0 -0.98456"/>
+
+            <set path="vehicle.animations.animation(6)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.animations.animation(6).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(6).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(0)#endTrans" value="3.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(6).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(6).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(1)#endTrans" value="-3.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(6).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(6).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(6).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(6).part(2)#endTrans" value="3.25 0 -0.98456"/>
+
+            <set path="vehicle.animations.animation(7)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.animations.animation(7).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(7).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(7).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(0)#endTrans" value="10.0 0 1.01544"/>
+            <set path="vehicle.animations.animation(7).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(7).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(7).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(1)#endTrans" value="-10.0 0 1.01544"/>
+            <set path="vehicle.animations.animation(7).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(7).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(7).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(7).part(2)#endTrans" value="10.0 0 -0.98456"/>
+
+            <set path="vehicle.animations.animation(8)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.animations.animation(8).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(8).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(8).part(0)#endTrans" value="1.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(8).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(8).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(8).part(1)#endTrans" value="-1.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(8).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(8).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(8).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(8).part(2)#endTrans" value="1.25 0 -0.98456"/>
+
+            <set path="vehicle.animations.animation(9)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.animations.animation(9).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(9).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(0)#endTrans" value="2.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(9).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(9).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(1)#endTrans" value="-2.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(9).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(9).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(9).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(9).part(2)#endTrans" value="2.25 0 -0.98456"/>
+
+            <set path="vehicle.animations.animation(10)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.animations.animation(10).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(10).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(0)#endTrans" value="3.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(10).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(10).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(1)#endTrans" value="-3.25 0 1.01544"/>
+            <set path="vehicle.animations.animation(10).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(10).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(10).part(2)#endTrans" value="3.25 0 -0.98456"/>
+
+            <set path="vehicle.animations.animation(11)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.animations.animation(11).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(11).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(11).part(0)#endTrans" value="10.0 0 1.01544"/>
+            <set path="vehicle.animations.animation(11).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(11).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(11).part(1)#endTrans" value="-10.0 0 1.01544"/>
+            <set path="vehicle.animations.animation(11).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(11).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(11).part(2)#endTrans" value="10.0 0 -0.98456"/>
+
+            <!-- make sure it never misses -->
+            <set path="vehicle.baler#maxPickupLitersPerSecond" value="5000"/>
+            <set path="vehicle.groundReferenceNodes.groundReferenceNode(0)#threshold" value="1.0"/>
+
+            <!-- add extra materials for the chain mat -->
+            <set path="vehicle.baseMaterial.material(1)#name" value="poettingerChain_mat"/>
+            <set path="vehicle.baseMaterial.material(1)#baseNode" value="scratchingFloor"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#name" value="colorMat0"/>
+            <set path="vehicle.baseMaterial.material(1).shaderParameter(0)#value" value="POETTINGER_RED1"/>
+
+            <!-- add in base material color selection -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_poettinger|$l10n_ui_colorRed"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="POETTINGER_RED1"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#params" value="$l10n_brand_poettinger|$l10n_ui_colorYellow"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#color" value="POETTINGER_YELLOW"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#params" value="$l10n_brand_poettinger|$l10n_ui_colorWhite"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#color" value="POETTINGER_WHITE1"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="impress125FPro_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            <!-- <set path="vehicle.baseMaterialConfigurations.material(1)#name" value="poettingerChain_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/> -->
+
+            <!-- add in design material color selection -->
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_poettinger|$l10n_ui_colorYellow"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="POETTINGER_YELLOW"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#params" value="$l10n_brand_poettinger|$l10n_ui_colorRed"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#color" value="POETTINGER_RED1"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#params" value="$l10n_brand_poettinger|$l10n_ui_colorWhite"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#color" value="POETTINGER_WHITE1"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="impress125FPro_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat4"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#name" value="impress125FPro_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(1)#shaderParameter" value="colorMat5"/>
+
+            <!-- add in design material color selection -->
+            <set path="vehicle.designMaterial2Configurations#useDefaultColors" value="true"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#params" value="$l10n_brand_poettinger|$l10n_ui_colorWhite"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#color" value="POETTINGER_WHITE1"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(1)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(1)#params" value="$l10n_brand_poettinger|$l10n_ui_colorYellow"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(1)#color" value="POETTINGER_YELLOW"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(2)#name" value="%s %s"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(2)#params" value="$l10n_brand_poettinger|$l10n_ui_colorRed"/>
+            <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(2)#color" value="POETTINGER_RED1"/>
+            <set path="vehicle.designMaterial2Configurations.material(0)#name" value="impress125FPro_mat"/>
+            <set path="vehicle.designMaterial2Configurations.material(0)#shaderParameter" value="colorMat1"/>
+            <set path="vehicle.designMaterial2Configurations.material(1)#name" value="impress125FPro_mat"/>
+            <set path="vehicle.designMaterial2Configurations.material(1)#shaderParameter" value="colorMat6"/>
+
+            <!-- rim configurations -->
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.rimColorConfigurations#price" value="0"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#params" value="$l10n_brand_poettinger|$l10n_ui_colorWhite"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#color" value="POETTINGER_WHITE1"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#params" value="$l10n_brand_poettinger|$l10n_ui_colorRed"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#color" value="POETTINGER_RED1"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#params" value="$l10n_brand_poettinger|$l10n_ui_colorYellow"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#color" value="POETTINGER_YELLOW"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>POETTINGER IMPRESS 125F PRO VPW</name>
+        <image>icons/store_poettinger_impress125FPro.png</image>
+        <brand>POETTINGER</brand>
+        <category>balers</category>
+    </storeData>
+</vehicle>

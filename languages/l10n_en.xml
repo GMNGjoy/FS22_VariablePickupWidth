@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors/>
+    <texts>
+        <text name="workMode_default" text="Default Pickup" />
+        <text name="workMode_bonus" text="Bonus Pickup" />
+        <text name="workMode_extended" text="Extended Pickup" />
+        <text name="workMode_unreal" text="Virtual Windrower" />
+        <text name="function_variablePickupWidth" text="The pickup on this tool has a variable work width." />
+
+        <text name="configuration_capacity" text="Capacity" />
+        <text name="configuration_doubleCapacity" text=" Double Capacity" />
+        <text name="configuration_doubleCapacityAdditives" text="Double Capacity w/ Additives" />
+        <text name="configuration_unrealCapacity" text="Ridonculous Capacity" />
+        <text name="configuration_unrealCapacityAdditives" text="Ridonculous Capacity w/ Additives" />
+
+        <text name="brand_poettinger" text="PÖTTINGER" />
+        <text name="brand_masseyFerguson" text="Massey Ferguson" />
+        <text name="brand_claas" text="Claas" />
+        <text name="brand_kemper" text="Kemper" />
+        <text name="brand_elho" text="Elho" />
+        <text name="brand_krone" text="Krone" />
+        <text name="brand_schuitemaker" text="Schuitemaker" />
+    </texts>
+</l10n>

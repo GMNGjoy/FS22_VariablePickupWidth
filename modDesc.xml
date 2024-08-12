@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="80">
+    <author>GMNGjoy</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Variable Pickup Width</en>
+        <de>Variable Aufnahmebreite</de>
+    </title>
+    <description>
+        <en>
+<![CDATA[Have you ever wished that the pickup area was just a bit wider? Variable Pickup Width (VPW) is the solution for you!
+
+This mod adds a custom workMode to multiple types of basegame equipment that are designed to "pick up" something from the ground. Each tool has been updated to have a workMode that you can select while using the machine, allowing you to select from 4 different pickup widths:
+- Default Pickup (default)
+- Bonus Pickup (+2m)
+- Extended Pickup (+4m)
+- Virtual Windrower (20m)
+
+Balers:
+- Poettenger Impress 125F Pro VPW
+- Massey Ferguson 1840 VPW
+- Claas Quadrant 5300 HD VPW
+- Claas Rollant455 Uniwrap VPW
+- CaseIh LB436 HD VPW
+- Krone Big Pack 1290 HD VPW
+
+Forage Wagons:
+- Poettenger Boss Alpine 251 VPW
+- Poettenger Faro 1050 D VPW
+- Schuitemaker Rapide 580V VPW
+- Poettenger Jumbo 10020 Tridem VPW
+- CLAAS CARGOS 9500 VPW
+
+Pickup Headers:
+- Kemper N3003 VPW
+
+Stone Pickers:
+- Elho Scorpio 550 VPW
+
+Additionally, any VPW tool that also has a fill capacity will also have selectable capacity upgrades in the shop with relative discharge rates - but you'll have to pay for that extra capacity!
+
+Each item costs $1 more than basegame, works a bit faster and has full color selection.
+
+For license, feedback and additional VPW machinery, please visit: https://github.com/GMNGjoy/FS22_VariablePickupWidth
+]]>
+        </en>
+        <de>
+<![CDATA[Haben Sie sich schon einmal gewünscht, dass der Aufnehmbereich etwas breiter wäre? Variable Pickup Width (VPW) ist die Lösung für Sie!
+
+Dieser Mod fügt mehreren Arten von Basisspielausrüstung, die dazu bestimmt ist, etwas vom Boden „aufzuheben“, einen benutzerdefinierten Arbeitsmodus hinzu. Jedes Werkzeug wurde aktualisiert und verfügt nun über einen Arbeitsmodus, den Sie während der Verwendung der Maschine auswählen können. So haben Sie die Wahl zwischen 4 verschiedenen Aufnahmebreiten:
+- Standardaufnahme (Standard)
+- Bonusaufnahme (+2 m)
+- Erweiterte Aufnahme (+4 m)
+- Virtueller Schwadleger (20 m)
+
+Ballenpressen:
+- Poettenger Impress 125F Pro VPW
+- Massey Ferguson 1840 VPW
+- Claas Quadrant 5300 HD VPW
+- Claas Rollant455 Uniwrap VPW
+- CaseIh LB436 HD VPW
+
+Ladewagen:
+- Poettenger Boss Alpine 251 VPW
+- Poettenger Faro 1050 D VPW
+- Schuitemaker Rapide 580V VPW
+- Poettenger Jumbo 10020 Tridem VPW
+- CLAAS CARGOS 9500 VPW
+
+Aufnahmeschneidwerke:
+- Kemper N3003 VPW
+
+Steinsammler:
+- Elho Scorpio 550 VPW
+
+Zusätzlich gibt es für jedes VPW-Werkzeug, das auch eine Füllkapazität hat, im Shop auch wählbare Kapazitätserweiterungen mit relativen Entladeraten – aber Sie müssen für diese zusätzliche Kapazität bezahlen!
+
+Jeder Artikel kostet 1 $ mehr als das Basisspiel, funktioniert etwas schneller und bietet eine vollständige Farbauswahl.
+
+For license, feedback and additional VPW machinery, please visit: https://github.com/GMNGjoy/FS22_VariablePickupWidth
+]]>
+        </de>
+    </description>
+    <iconFilename>icon_variablePickupWidth.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <vehicleTypes>
+		<type name="forageWagonWorkMode" parent="forageWagon" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="workMode" />
+		</type>
+        <type name="balerWorkMode" parent="baler" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="workMode" />
+		</type>
+        <type name="balerWrapperWorkMode" parent="balerWrapper" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="workMode" />
+		</type>
+        <type name="cutterWorkMode" parent="cutter" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="workMode" />
+		</type>
+        <type name="stonePickerWorkMode" parent="stonePicker" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="workMode" />
+		</type>
+	</vehicleTypes>
+
+    <storeItems>
+        <!-- Balers -->
+        <storeItem xmlFilename="xml/masseyFerguson_baler1840.xml"/>
+        <storeItem xmlFilename="xml/poettinger_impress125FPro.xml"/>
+        <storeItem xmlFilename="xml/claas_rollant455Uniwrap.xml"/>
+        <storeItem xmlFilename="xml/claas_quadrant5300.xml"/>
+        <storeItem xmlFilename="xml/case_lb436HD.xml"/>
+        <storeItem xmlFilename="xml/krone_bigPack1290HDPVC.xml"/>
+
+        <!-- Forage Wagons -->
+        <storeItem xmlFilename="xml/poettinger_bossAlpin251.xml"/>
+        <storeItem xmlFilename="xml/poettinger_faro1050D.xml" />
+        <storeItem xmlFilename="xml/schuitemaker_rapide580V.xml" />
+        <storeItem xmlFilename="xml/poettinger_jumbo10020Tridem.xml" />
+        <storeItem xmlFilename="xml/claas_cargos9500.xml" />
+
+         <!-- Pickup Headers -->
+         <storeItem xmlFilename="xml/kemper_n3003.xml"/>
+
+        <!-- Stone Picker -->
+        <storeItem xmlFilename="xml/elho_scorpio550.xml"/>
+    </storeItems>
+
+    <l10n filenamePrefix="languages/l10n" />
+</modDesc>

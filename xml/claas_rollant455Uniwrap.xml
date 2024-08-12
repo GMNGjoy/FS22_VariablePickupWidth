@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="balerWrapperWorkMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="$data/vehicles/claas/rollant455Uniwrap/rollant455Uniwrap.xml">
+        <attributes>
+            <set path="vehicle#type" value="balerWrapperWorkMode"/>
+            <set path="vehicle.storeData.name" value="ROLLANT 455 RCU VPW"/>
+            <set path="vehicle.storeData.price" value="78501"/>
+            <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
+            <set path="vehicle.base.speedLimit#value" value="22"/>
+
+            <!-- make the pickup area bigger -->
+            <set path="vehicle.base.objectChanges.objectChange(0)#node" value="workAreaStart"/>
+            <set path="vehicle.base.objectChanges.objectChange(0)#translationActive" value="1.4 0 2.115"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.base.objectChanges.objectChange(1)#translationActive" value="-1.4 0 2.115"/>
+            <set path="vehicle.base.objectChanges.objectChange(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.base.objectChanges.objectChange(2)#translationActive" value="1.4 0 0.115"/>
+
+            <!-- remove the 125 capacity limit as it's not needed -->
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnits(0)#capacity" />
+
+            <!-- speed up the wrapping animation -->
+            <set path="vehicle.baleWrapper.grabber#nearestDistance" value="0.6" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper#wrappingTime" value="2.0" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.animations.moveToWrapper#animSpeed" value="6" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.animations.wrapBale#animSpeed" value="2" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.animations.resetWrapping#animSpeed" value="5" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.animations.dropFromWrapper#animSpeed" value="4" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.animations.resetAfterDrop#animSpeed" value="4" />
+
+            <!-- add 150's to baleWrapper -->
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1)#width" value="1.2" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1)#diameter" value="1.5" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1).textures#diffuse" value="$data/vehicles/poettinger/impress185VCPro/impress185VCProBaleWrap150_diffuse.dds" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1).textures#normal" value="$data/vehicles/poettinger/impress185VCPro/impress185VCProBaleWrap150_normal.dds" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1).wrappingFoilAnimation#referenceNode" value="wrapper" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1).wrappingFoilAnimation#referenceAxis" value="2" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1).wrappingFoilAnimation#minRot" value="-7" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1).wrappingFoilAnimation#maxRot" value="-3255" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1).wrappingFoilAnimation#clipNode" value="leftJoint01" />
+            <set path="vehicle.baleWrapper.roundBaleWrapper.baleTypes.baleType(1).wrappingFoilAnimation#clipName" value="baleWrap125Source" />
+
+            <!-- add 150 to baleTypes -->
+            <set path="vehicle.baler.baleTypes.baleType(1)#isRoundBale" value="true" />
+            <set path="vehicle.baler.baleTypes.baleType(1)#width" value="1.2" />
+            <set path="vehicle.baler.baleTypes.baleType(1)#diameter" value="1.5" />
+            <set path="vehicle.baler.baleTypes.baleType(1).nodes#baleNode" value="balerBaleNode" />
+            <set path="vehicle.baler.baleTypes.baleType(1).nodes#scaleNode" value="baleAnimNode" />
+            <set path="vehicle.baler.baleTypes.baleType(1).nodes#scaleComponents" value="0.95 0.95 0" />
+            <set path="vehicle.baler.baleTypes.baleType(1).animations#fillAnimation" value="fillAnimation" />
+            <set path="vehicle.baler.baleTypes.baleType(1).animations#unloadAnimation" value="unloadBale" />
+            <!-- <set path="vehicle.baler.baleTypes.baleType(1).animations#dropAnimationTime" vaelue="5.5" /> -->
+
+            <!-- flip the bale on it's side -->
+            <set path="vehicle.animations.animation(4).part(7)#endRot" value="-0.404 90 -122.739" />
+
+            <!-- add the workModes -->
+            <set path="vehicle.workModes.workMode(0)#name" value="$l10n_workMode_default"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(1)#name" value="$l10n_workMode_bonus"/>
+            <set path="vehicle.workModes.workMode(1).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(1)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(2)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(2)#name" value="$l10n_workMode_extended"/>
+            <set path="vehicle.workModes.workMode(2).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(2)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(3)#name" value="$l10n_workMode_unreal"/>
+            <set path="vehicle.workModes.workMode(3).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="1"/>
+
+            <!-- add the workMode animations -->
+            <set path="vehicle.animations.animation(10)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.animations.animation(10).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(10).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(10).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(0)#endTrans" value="1.4 0 2.115"/>
+            <set path="vehicle.animations.animation(10).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(10).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(10).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(1)#endTrans" value="-1.4 0 2.115"/>
+            <set path="vehicle.animations.animation(10).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(10).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(10).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(10).part(2)#endTrans" value="1.4 0 0.115"/>
+
+            <set path="vehicle.animations.animation(11)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.animations.animation(11).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(11).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(11).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(0)#endTrans" value="2.4 0 2.115"/>
+            <set path="vehicle.animations.animation(11).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(11).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(11).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(1)#endTrans" value="-2.4 0 2.115"/>
+            <set path="vehicle.animations.animation(11).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(11).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(11).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(2)#endTrans" value="2.4 0 0.115"/>
+
+            <set path="vehicle.animations.animation(12)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.animations.animation(12).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(12).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(12).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(0)#endTrans" value="3.4 0 2.115"/>
+            <set path="vehicle.animations.animation(12).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(12).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(12).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(1)#endTrans" value="-3.4 0 2.115"/>
+            <set path="vehicle.animations.animation(12).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(12).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(12).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(2)#endTrans" value="3.4 0 0.115"/>
+
+            <set path="vehicle.animations.animation(13)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.animations.animation(13).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(13).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(13).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(0)#endTrans" value="10.0 0 2.115"/>
+            <set path="vehicle.animations.animation(13).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(13).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(13).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(1)#endTrans" value="-10.0 0 2.115"/>
+            <set path="vehicle.animations.animation(13).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(13).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(13).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(2)#endTrans" value="10.0 0 0.115"/>
+
+            <set path="vehicle.animations.animation(14)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.animations.animation(14).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(14).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(14).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(14).part(0)#endTrans" value="1.4 0 2.115"/>
+            <set path="vehicle.animations.animation(14).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(14).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(14).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(14).part(1)#endTrans" value="-1.4 0 2.115"/>
+            <set path="vehicle.animations.animation(14).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(14).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(14).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(14).part(2)#endTrans" value="1.4 0 0.115"/>
+
+            <set path="vehicle.animations.animation(15)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.animations.animation(15).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(15).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(15).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(15).part(0)#endTrans" value="2.4 0 2.115"/>
+            <set path="vehicle.animations.animation(15).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(15).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(15).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(15).part(1)#endTrans" value="-2.4 0 2.115"/>
+            <set path="vehicle.animations.animation(15).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(15).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(15).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(15).part(2)#endTrans" value="2.4 0 0.115"/>
+
+            <set path="vehicle.animations.animation(16)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.animations.animation(16).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(16).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(16).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(16).part(0)#endTrans" value="3.4 0 2.115"/>
+            <set path="vehicle.animations.animation(16).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(16).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(16).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(16).part(1)#endTrans" value="-3.4 0 2.115"/>
+            <set path="vehicle.animations.animation(16).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(16).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(16).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(16).part(2)#endTrans" value="3.4 0 0.115"/>
+
+            <set path="vehicle.animations.animation(17)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.animations.animation(17).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(17).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(17).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(17).part(0)#endTrans" value="10.0 0 2.115"/>
+            <set path="vehicle.animations.animation(17).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(17).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(17).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(17).part(1)#endTrans" value="-10.0 0 2.115"/>
+            <set path="vehicle.animations.animation(17).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(17).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(17).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(17).part(2)#endTrans" value="10.0 0 0.115"/>
+
+            <!-- make sure it never misses -->
+            <set path="vehicle.baler#maxPickupLitersPerSecond" value="5000"/>
+            <set path="vehicle.groundReferenceNodes.groundReferenceNode(0)#threshold" value="1.0"/>
+
+            <!-- add in claas colors to the bale wrapper -->
+            <set path="vehicle.wrappingColorConfigurations#useDefaultColors" value="true" />
+            <set path="vehicle.wrappingColorConfigurations#defaultColorIndex" value="1" />
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(5)#name" value="%s %s"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(5)#params" value="$l10n_brand_claas|$l10n_ui_colorGreen"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(5)#color" value="CLAAS_GREEN1"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(5)#material" value="1"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(6)#name" value="%s %s"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(6)#params" value="$l10n_brand_claas|$l10n_ui_colorRed"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(6)#color" value="CLAAS_RED1"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(6)#material" value="1"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(7)#name" value="%s %s"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(7)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(7)#color" value="CLAAS_WHITE1"/>
+            <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(7)#material" value="1"/>
+
+            <!-- make the hubs a neutral color -->
+            <set path="vehicle.wheels.hubs.color0" value="SHARED_BLACK1"/>
+
+            <!-- base material configuration -->
+            <remove path="vehicle.baseMaterialConfigurations" />
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <!-- <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/> -->
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorGreen"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="CLAAS_GREEN1"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#color" value="CLAAS_WHITE1"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#params" value="$l10n_brand_claas|$l10n_ui_colorRed"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(2)#color" value="CLAAS_RED1"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="rollant455Uniwrap_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+
+            <!-- design material configuration: tines -->
+            <set path="vehicle.designMaterialConfigurations#title" value="Detail Color"/>
+            <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
+            <!-- <set path="vehicle.designMaterialConfigurations#defaultColorIndex" value="7"/> -->
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="CLAAS_WHITE1"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#params" value="$l10n_brand_claas|$l10n_ui_colorGreen"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#color" value="CLAAS_GREEN1"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#params" value="$l10n_brand_claas|$l10n_ui_colorRed"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(2)#color" value="CLAAS_RED1"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#name" value="rollant455Uniwrap_mat"/>
+            <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat1"/>
+
+            <!-- rim configuration -->
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.rimColorConfigurations#price" value="0"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorRed"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#color" value="CLAAS_RED1"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#color" value="CLAAS_WHITE1"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#name" value="%s %s"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#params" value="$l10n_brand_claas|$l10n_ui_colorGreen"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(2)#color" value="CLAAS_GREEN1"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>CLAAS ROLLANT 455 RCU VPW</name>
+        <image>icons/store_rollant455Uniwrap.png</image>
+        <brand>CLAAS</brand>
+        <category>balers</category>
+    </storeData>
+</vehicle>
