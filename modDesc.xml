@@ -10,7 +10,7 @@
         <en>
 <![CDATA[Have you ever wished that the pickup area was just a bit wider? Variable Pickup Width (VPW) is the solution for you!
 
-This mod adds a custom workMode to multiple types of basegame equipment that are designed to "pick up" something from the ground. Each tool has been updated to have a workMode that you can select while using the machine, allowing you to select from 4 different pickup widths:
+This mod adds a custom work mode to multiple types of basegame equipment that are designed to "pick up" something from the ground. Each tool has been updated to have a work mode that you can select while using the machine, allowing you to select from 4 different pickup widths:
 - Default Pickup (default)
 - Bonus Pickup (+2m)
 - Extended Pickup (+4m)
@@ -32,7 +32,7 @@ Forage Wagons:
 - CLAAS CARGOS 9500 VPW
 
 Pickup Headers:
-- Kemper N3003 VPW
+- Kemper 3003 VPW
 
 Stone Pickers:
 - Elho Scorpio 550 VPW
@@ -45,16 +45,16 @@ For license, feedback and additional VPW machinery, please visit: https://github
 ]]>
         </en>
         <de>
-<![CDATA[Haben Sie sich schon einmal gewünscht, dass der Aufnehmbereich etwas breiter wäre? Variable Pickup Width (VPW) ist die Lösung für Sie!
+<![CDATA[Hast Du dir auch schon einmal geünscht, dass die Aufnahmebreite von Geräten etwas breiter wäre? Variable Aufnahmebreite (VPW von engl. "Variable Pickup Width") ist die Lösung für Dich!
 
-Dieser Mod fügt mehreren Arten von Basisspielausrüstung, die dazu bestimmt ist, etwas vom Boden „aufzuheben“, einen benutzerdefinierten Arbeitsmodus hinzu. Jedes Werkzeug wurde aktualisiert und verfügt nun über einen Arbeitsmodus, den Sie während der Verwendung der Maschine auswählen können. So haben Sie die Wahl zwischen 4 verschiedenen Aufnahmebreiten:
-- Standardaufnahme (Standard)
-- Bonusaufnahme (+2 m)
-- Erweiterte Aufnahme (+4 m)
-- Virtueller Schwadleger (20 m)
+Diese Mod fügt für mehrere Arten von Geräten aus dem Basisspiel einen auswählbaren Arbeitsmodus hinzu, der dazu bestimmt ist, etwas vom Boden aufzuheben. Jedes modifizierte Gerät erlaubt es, eine von vier Arbeitsbreiten einzustellen, während man das Gerät verwendet;
+- Standard Arbeitsbreite (Standard)
+- Zusätzliche Arbeitsbreite (+2m)
+- Erweiterte Arbeitsbreite (+4m)
+- Virtueller Schwader (20m)
 
 Ballenpressen:
-- Poettenger Impress 125F Pro VPW
+- Poettinger Impress 125F Pro VPW
 - Massey Ferguson 1840 VPW
 - Claas Quadrant 5300 HD VPW
 - Claas Rollant455 Uniwrap VPW
@@ -67,17 +67,17 @@ Ladewagen:
 - Poettenger Jumbo 10020 Tridem VPW
 - CLAAS CARGOS 9500 VPW
 
-Aufnahmeschneidwerke:
-- Kemper N3003 VPW
+Feldhäcksler-Schneidwerk:
+- Kemper 3003 VPW
 
 Steinsammler:
 - Elho Scorpio 550 VPW
 
-Zusätzlich gibt es für jedes VPW-Werkzeug, das auch eine Füllkapazität hat, im Shop auch wählbare Kapazitätserweiterungen mit relativen Entladeraten – aber Sie müssen für diese zusätzliche Kapazität bezahlen!
+Zusätzlich gibt es für jedes VPW-Gerät, das auch eine Füllkapazität hat, im Shop auch wählbare Kapazitätserweiterungen mit angepassten Entladeraten – aber Du musst für diese zusätzliche Kapazität bezahlen!
 
-Jeder Artikel kostet 1 $ mehr als das Basisspiel, funktioniert etwas schneller und bietet eine vollständige Farbauswahl.
+Jedes Gerät kostet 1€ mehr als im Basisspiel, arbeitet etwas schneller und unterstützt die volle Farbauswahl.
 
-For license, feedback and additional VPW machinery, please visit: https://github.com/GMNGjoy/FS22_VariablePickupWidth
+Besucht für Lizenz, Feedback und zusätzliche VPW-Geräte https://github.com/GMNGjoy/FS22_VariablePickupWidth
 ]]>
         </de>
     </description>
