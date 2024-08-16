@@ -10,13 +10,11 @@
             <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
             <set path="vehicle.base.speedLimit#value" value="22"/>
 
-            <!-- make the pickup area bigger -->
-            <set path="vehicle.base.objectChanges.objectChange(0)#node" value="workAreaStart"/>
-            <set path="vehicle.base.objectChanges.objectChange(0)#translationActive" value="1.4 0 2.115"/>
-            <set path="vehicle.base.objectChanges.objectChange(1)#node" value="workAreaWidth"/>
-            <set path="vehicle.base.objectChanges.objectChange(1)#translationActive" value="-1.4 0 2.115"/>
-            <set path="vehicle.base.objectChanges.objectChange(2)#node" value="workAreaHeight"/>
-            <set path="vehicle.base.objectChanges.objectChange(2)#translationActive" value="1.4 0 0.115"/>
+            <!-- default workArea from i3d
+            workAreaStart :: 1.4 0 2.114866
+            workAreaWidth :: -1.4 0 2.114866
+            workAreaHeight :: 1.4 0 1.822819
+            -->
 
             <!-- remove the 125 capacity limit as it's not needed -->
             <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnits(0)#capacity" />
@@ -213,6 +211,9 @@
             <!-- make sure it never misses -->
             <set path="vehicle.baler#maxPickupLitersPerSecond" value="5000"/>
             <set path="vehicle.groundReferenceNodes.groundReferenceNode(0)#threshold" value="1.0"/>
+
+            <!-- allow backwards pickup -->
+            <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
 
             <!-- add in claas colors to the bale wrapper -->
             <set path="vehicle.wrappingColorConfigurations#useDefaultColors" value="true" />

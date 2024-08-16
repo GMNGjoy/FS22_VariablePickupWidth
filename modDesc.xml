@@ -39,6 +39,8 @@ Stone Pickers:
 
 Additionally, any VPW tool that also has a fill capacity will also have selectable capacity upgrades in the shop with relative discharge rates - but you'll have to pay for that extra capacity!
 
+Note: In rare cases when saving, leaving the game and coming back in with a VPW work mode selected - it will appear that the pickup area has not been adjusted correctly. To remedy this, just cycle through the work modes again to your selection, and continue on.
+
 Each item costs $1 more than basegame, works a bit faster and has full color selection.
 
 For license, feedback and additional VPW machinery, please visit: https://github.com/GMNGjoy/FS22_VariablePickupWidth]]>
@@ -73,6 +75,8 @@ Steinsammler:
 - Elho Scorpio 550 VPW
 
 Zusätzlich gibt es für jedes VPW-Gerät, das auch eine Füllkapazität hat, im Shop auch wählbare Kapazitätserweiterungen mit angepassten Entladeraten – aber Du musst für diese zusätzliche Kapazität bezahlen!
+
+Hinweis: In seltenen Fällen kann es nach dem Speichern, Verlassen und erneuten Laden des Spiels so aussehen als ob die Arbeitsbreite nicht richtig angepasst wurde. Um das Problem zu lösen, musst du nur einmal durch die Arbeitsbreiten rotieren und kannst dann die Arbeit fortführen.
 
 Jedes Gerät kostet 1€ mehr als im Basisspiel, arbeitet etwas schneller und unterstützt die volle Farbauswahl.
 
@@ -116,8 +120,8 @@ Besucht für Lizenz, Feedback und zusätzliche VPW-Geräte https://github.com/GM
         <storeItem xmlFilename="xml/poettinger_jumbo10020Tridem.xml" />
         <storeItem xmlFilename="xml/claas_cargos9500.xml" />
 
-         <!-- Pickup Headers -->
-         <storeItem xmlFilename="xml/kemper_n3003.xml"/>
+        <!-- Pickup Headers -->
+        <storeItem xmlFilename="xml/kemper_n3003.xml"/>
 
         <!-- Stone Picker -->
         <storeItem xmlFilename="xml/elho_scorpio550.xml"/>

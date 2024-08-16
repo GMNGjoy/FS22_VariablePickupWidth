@@ -11,21 +11,19 @@
             <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
             <set path="vehicle.base.speedLimit#value" value="20"/>
 
-            <!-- reset the work areas to VPW defaults -->
-            <set path="vehicle.base.objectChanges.objectChange(0)#node" value="workAreaStart"/>
-            <set path="vehicle.base.objectChanges.objectChange(0)#translationActive" value="1.25 0 1.01544"/>
-            <set path="vehicle.base.objectChanges.objectChange(1)#node" value="workAreaWidth"/>
-            <set path="vehicle.base.objectChanges.objectChange(1)#translationActive" value="-1.25 0 1.01544"/>
-            <set path="vehicle.base.objectChanges.objectChange(2)#node" value="workAreaHeight"/>
-            <set path="vehicle.base.objectChanges.objectChange(2)#translationActive" value="1.25 0 -0.98456"/>
+            <!-- default workArea from i3d
+            workAreaStart :: 1.25 0 1.01544
+            workAreaWidth :: -1.25 0 1.01544
+            workAreaHeight :: 1.25 0 0.489732
+            -->
 
             <!-- add the workModes -->
             <set path="vehicle.workModes.workMode(0)#name" value="$l10n_workMode_default"/>
-            <set path="vehicle.workModes.workMode(0).animation(0)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#name" value="bonusWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(0).animation(0)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(0).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#name" value="extendedWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(0).animation(1)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(0).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#name" value="unrealWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
             <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
@@ -176,6 +174,9 @@
             <!-- make sure it never misses -->
             <set path="vehicle.baler#maxPickupLitersPerSecond" value="5000"/>
             <set path="vehicle.groundReferenceNodes.groundReferenceNode(0)#threshold" value="1.0"/>
+
+            <!-- allow backwards pickup -->
+            <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
 
             <!-- add extra materials for the chain mat -->
             <set path="vehicle.baseMaterial.material(1)#name" value="poettingerChain_mat"/>

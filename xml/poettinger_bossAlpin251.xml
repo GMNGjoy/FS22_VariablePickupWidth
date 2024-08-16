@@ -11,21 +11,19 @@
             <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
             <set path="vehicle.base.speedLimit#value" value="20"/>
 
-            <!-- reset the work areas to VPW defaults -->
-            <set path="vehicle.base.objectChanges.objectChange(0)#node" value="workAreaStart"/>
-            <set path="vehicle.base.objectChanges.objectChange(0)#translationActive" value="1.2 0 1.8"/>
-            <set path="vehicle.base.objectChanges.objectChange(1)#node" value="workAreaWidth"/>
-            <set path="vehicle.base.objectChanges.objectChange(1)#translationActive" value="-1.2 0 1.8"/>
-            <set path="vehicle.base.objectChanges.objectChange(2)#node" value="workAreaHeight"/>
-            <set path="vehicle.base.objectChanges.objectChange(2)#translationActive" value="1.25 0 -0.2"/>
+            <!-- default workArea from i3d
+            workAreaStart :: 1.2 0 1.8
+            workAreaWidth :: -1.2 0 1.8
+            workAreaHeight :: 1.2 0 1.2
+            -->
 
             <!-- add the workModes -->
             <set path="vehicle.workModes.workMode(0)#name" value="$l10n_workMode_default"/>
-            <set path="vehicle.workModes.workMode(0).animation(0)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(0)#name" value="bonusWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(0).animation(0)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(0).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(1)#name" value="extendedWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(0).animation(1)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(0).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(2)#name" value="unrealWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
             <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
@@ -177,6 +175,9 @@
             <set path="vehicle.forageWagon#maxPickupLitersPerSecond" value="5000"/>
             <set path="vehicle.groundReferenceNodes.groundReferenceNode(0)#threshold" value="1.0"/>
 
+            <!-- allow backwards pickup -->
+            <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
+
             <!-- add in configuration sets -->
             <set path="vehicle.configurationSets.configurationSet(0)#name" value="$l10n_configuration_valueDefault"/>
             <set path="vehicle.configurationSets.configurationSet(0).configuration(0)#name" value="fillUnit"/>
@@ -196,20 +197,6 @@
             <set path="vehicle.configurationSets.configurationSet(2).configuration(1)#name" value="dischargeable"/>
             <set path="vehicle.configurationSets.configurationSet(2).configuration(1)#index" value="3"/>
 
-            <!-- <fillUnit>
-        <fillUnitConfigurations>
-            <fillUnitConfiguration>
-                <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="forageWagon"
-                        capacity="16100" allowAILoading="true">
-                        <exactFillRootNode node="exactFillRootNode" />
-                        <autoAimTargetNode node="autoAimTargetNode" startZ="0.662" endZ="-1.518"
-                            invert="false" startPercentage="28" />
-                    </fillUnit>
-                </fillUnits>
-            </fillUnitConfiguration>
-        </fillUnitConfigurations>
-    </fillUnit> -->
             <!-- add in fill unit configurations -->
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(1)#name" value="$l10n_configuration_doubleCapacity"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(1)#price" value="5000"/>
@@ -238,28 +225,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0).autoAimTargetNode#invert" value="false"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(2).fillUnits.fillUnit(0).autoAimTargetNode#startPercentage" value="28"/>
 
-            <!-- triple the discharge rate -->
-            <!-- <set path="vehicle.dischargeable.dischargeNode#emptySpeed" value="3210"/> -->
-            <!--
-    <dischargeable>
-        <dischargeNode node="dischargeNode" emptySpeed="1070" fillUnitIndex="1" unloadInfoIndex="1"
-            allowAIDischarge="true">
-            <info width="1.1" length="0.5" />
-
-            <effects>
-                <effectNode effectClass="TipEffect">
-                    <effectNode effectNode="unloadingParticle" effectClass="ParticleEffect"
-                        materialType="unloadingParticle" lifespan="0.2" worldSpace="false" />
-                    <effectNode effectNode="unloadingEffect" materialType="unloading" delay="0.1"
-                        fadeTime="0.5" extraDistanceNode="dischargeNode" />
-                </effectNode>
-                <effectNode effectNode="smokeEffect" materialType="unloadingSmoke" fadeTime="0.5" />
-            </effects>
-            <dischargeStateSound template="augerBelt" pitchScale="0.5" volumeScale="0.7"
-                fadeIn="0.5" fadeOut="1" />
-        </dischargeNode>
-    </dischargeable>
-            -->
+            <!-- create relative discharge rates -->
             <remove path="vehicle.dischargeable" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0)#node" value="dischargeNode" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(0).dischargeNode(0)#emptySpeed" value="1070" />

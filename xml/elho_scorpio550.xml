@@ -258,6 +258,8 @@
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(1)#materialType" value="unloadingSmoke" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0).effects.effectNode(1)#fadeTime" value="0.5" />
 
+            <!-- allow backwards pickup -->
+            <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
 
             <!-- extra materials -->
             <set path="vehicle.baseMaterial.material(0).shaderParameter(1)#name" value="colorMat1"/>

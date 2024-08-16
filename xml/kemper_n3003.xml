@@ -165,6 +165,9 @@
             <set path="vehicle.animations.animation(10).part(2)#endTime" value="0.2"/>
             <set path="vehicle.animations.animation(10).part(2)#endTrans" value="10.0 0 -1.798216"/>
 
+            <!-- allow backwards pickup -->
+            <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
+
             <!-- extra materials -->
             <set path="vehicle.baseMaterial.material(1)#name" value="n3003_vmask_mat"/>
             <set path="vehicle.baseMaterial.material(1)#baseNode" value="0>0|0|0|4|2"/>
