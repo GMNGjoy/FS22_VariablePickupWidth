@@ -594,6 +594,7 @@
             <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat1"/>
 
             <!-- design material configuration: tines -->
+            <set path="vehicle.designMaterial2Configurations#price" value="0"/>
             <set path="vehicle.designMaterial2Configurations#name" value="Floor Chain Color"/>
             <set path="vehicle.designMaterial2Configurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterial2Configurations#defaultColorIndex" value="6"/>

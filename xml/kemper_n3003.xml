@@ -190,9 +190,13 @@
             <set path="vehicle.baseMaterial.material(5).shaderParameter(0)#name" value="colorMat0"/>
             <set path="vehicle.baseMaterial.material(5).shaderParameter(0)#value" value="KEMPER_RED1"/>
 
+            <!-- reset the hub color -->
+            <set path="vehicle.wheels.hubs.color0" value=""/>
+            <set path="vehicle.wheels.hubs.color0#useBaseColor" value="true"/>
+
             <!-- add in base material color selection -->
+            <set path="vehicle.baseMaterialConfigurations#price" value="0"/>
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
-            <!-- <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="31"/> -->
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_color_kemper|$l10n_ui_colorRedd"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="KEMPER_RED1"/>
@@ -202,6 +206,7 @@
             <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
 
             <!-- add in design material color selection -->
+            <set path="vehicle.designMaterialConfigurations#price" value="0"/>
             <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_kemper|$l10n_ui_colorRed"/>

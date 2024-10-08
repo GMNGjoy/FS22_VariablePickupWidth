@@ -178,9 +178,8 @@
             <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
 
             <!-- base material configuration -->
-            <remove path="vehicle.baseMaterialConfigurations" />
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
-            <!-- <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/> -->
+            <set path="vehicle.baseMaterialConfigurations#price" value="0"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_case|$l10n_ui_colorRed"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="CASEIH_RED1"/>
@@ -189,6 +188,7 @@
 
             <!-- design material configuration: tines -->
             <set path="vehicle.designMaterialConfigurations#title" value="Detail Color"/>
+            <set path="vehicle.designMaterialConfigurations#price" value="0"/>
             <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterialConfigurations#defaultColorIndex" value="8"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
@@ -199,8 +199,8 @@
 
             <!-- design material configuration: tines -->
             <set path="vehicle.designMaterial2Configurations#title" value="Pickup Color"/>
+            <set path="vehicle.designMaterial2Configurations#price" value="0"/>
             <set path="vehicle.designMaterial2Configurations#useDefaultColors" value="true"/>
-            <!-- <set path="vehicle.designMaterial2Configurations#defaultColorIndex" value="7"/> -->
             <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#name" value="%s %s"/>
             <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#params" value="$l10n_brand_case|$l10n_ui_colorRed"/>
             <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#color" value="CASEIH_RED1"/>
@@ -209,6 +209,7 @@
 
             <!-- design material configuration: tines -->
             <set path="vehicle.designMaterial3Configurations#title" value="Frame Color"/>
+            <set path="vehicle.designMaterial3Configurations#price" value="0"/>
             <set path="vehicle.designMaterial3Configurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterial3Configurations#defaultColorIndex" value="8"/>
             <set path="vehicle.designMaterial3Configurations.designMaterial3Configuration(0)#name" value="%s %s"/>

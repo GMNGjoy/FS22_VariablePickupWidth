@@ -179,6 +179,7 @@
 
             <!-- base material configuration -->
             <remove path="vehicle.baseMaterialConfigurations" />
+            <set path="vehicle.baseMaterialConfigurations#price" value="0"/>
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorGreen"/>
@@ -194,6 +195,7 @@
 
             <!-- design material configuration: tines -->
             <set path="vehicle.designMaterialConfigurations#title" value="Detail Color"/>
+            <set path="vehicle.designMaterialConfigurations#price" value="0"/>
             <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>

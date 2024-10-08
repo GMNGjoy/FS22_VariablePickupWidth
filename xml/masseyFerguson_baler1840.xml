@@ -178,7 +178,12 @@
             <!-- allow backwards pickup -->
             <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
 
+            <!-- reset the hub color -->
+            <set path="vehicle.wheels.hubs.color0" value=""/>
+            <set path="vehicle.wheels.hubs.color0#useBaseColor" value="true"/>
+
             <!-- add in base material color selection -->
+            <set path="vehicle.baseMaterialConfigurations#price" value="0"/>
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_masseyFerguson|$l10n_ui_colorRed"/>
@@ -192,6 +197,7 @@
             <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/> -->
 
             <!-- add in design material color selection -->
+            <set path="vehicle.designMaterialConfigurations#price" value="0"/>
             <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_masseyFerguson|$l10n_color_grey"/>

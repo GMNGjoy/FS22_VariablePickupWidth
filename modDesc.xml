@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="80">
     <author>GMNGjoy</author>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <title>
         <en>Variable Pickup Width</en>
         <de>Variable Pickupbreite</de>
@@ -37,14 +37,19 @@ Pickup Headers:
 Stone Pickers:
 - Elho Scorpio 550 VPW
 
-Additionally, any VPW tool that also has a fill capacity will also have selectable capacity upgrades in the shop with relative discharge rates - but you'll have to pay for that extra capacity!
+Additionally, any VPW tool that also has a fill capa, city will also have selectable capacity upgrades in the shop with relative discharge rates - but you'll have to pay for that extra capacity!
 
 Note: In rare cases when saving, leaving the game and coming back in with a VPW work mode selected - it will appear that the pickup area has not been adjusted correctly. To remedy this, just cycle through the work modes again to your selection, and continue on.
 
 Each item costs $1 more than basegame, works a bit faster and has full color selection.
 
-For license, feedback and additional VPW machinery, please visit: https://github.com/GMNGjoy/FS22_VariablePickupWidth]]>
-        </en>
+For license, feedback and additional VPW machinery, please visit: https://github.com/GMNGjoy/FS22_VariablePickupWidth
+
+CHANGELOG 1.0.0.1
+- Corrected prices for all color options to be free
+- Fixed unload speed of Ridonculous Capacity on the Claas Cargos 9500 VPW
+- Fixed AI worker fpr Elho Scorpio 550 VPW to respect VPW width]]>
+</en>
         <de>
 <![CDATA[Hast Du dir auch schon einmal gewünscht, dass die Arbeitsbreite der Pickup von Geräten etwas größer wäre? Variable Pickupbreite (VPW von engl. "Variable Pickup Width") ist die Lösung für Dich!
 

@@ -9,7 +9,7 @@
             <set path="vehicle.storeData.name" value="Scorpio 550 VPW"/>
             <set path="vehicle.storeData.price" value="52001"/>
             <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
-            <set path="vehicle.base.speedLimit#value" value="20"/>
+            <set path="vehicle.base.speedLimit#value" value="22"/>
 
             <!-- add the workModes -->
             <set path="vehicle.workModes.workMode(0)#name" value="$l10n_workMode_default"/>
@@ -21,6 +21,14 @@
             <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
             <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(0).animation(4)#name" value="unrealAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(4)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(5)#name" value="bonusAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(5)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(6)#name" value="extendedAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(6)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(7)#name" value="defaultAiMarkerSet"/>
+            <set path="vehicle.workModes.workMode(0).animation(7)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(1)#name" value="$l10n_workMode_bonus"/>
             <set path="vehicle.workModes.workMode(1).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -31,6 +39,14 @@
             <set path="vehicle.workModes.workMode(1).animation(2)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(1).animation(3)#name" value="bonusWorkAreaSet"/>
             <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(1).animation(4)#name" value="defaultAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(4)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(5)#name" value="extendedAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(5)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(6)#name" value="unrealAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(6)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(7)#name" value="bonusAiMarkerSet"/>
+            <set path="vehicle.workModes.workMode(1).animation(7)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(2)#name" value="$l10n_workMode_extended"/>
             <set path="vehicle.workModes.workMode(2).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -41,6 +57,14 @@
             <set path="vehicle.workModes.workMode(2).animation(2)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(2).animation(3)#name" value="extendedWorkAreaSet"/>
             <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(2).animation(4)#name" value="defaultAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(4)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(5)#name" value="bonusAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(5)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(6)#name" value="unrealAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(6)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(7)#name" value="extendedAiMarkerSet"/>
+            <set path="vehicle.workModes.workMode(2).animation(7)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(3)#name" value="$l10n_workMode_unreal"/>
             <set path="vehicle.workModes.workMode(3).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -51,6 +75,14 @@
             <set path="vehicle.workModes.workMode(3).animation(2)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(3).animation(3)#name" value="unrealWorkAreaSet"/>
             <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(3).animation(4)#name" value="defaultAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(4)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(5)#name" value="bonusAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(5)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(6)#name" value="extendedAiMarkerClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(6)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(7)#name" value="unrealAiMarkerSet"/>
+            <set path="vehicle.workModes.workMode(3).animation(7)#speed" value="1"/>
 
             <!-- add the workMode animations -->
             <set path="vehicle.animations.animation(3)#name" value="defaultWorkAreaClear"/>
@@ -165,6 +197,87 @@
             <set path="vehicle.animations.animation(10).part(2)#endTime" value="0.2"/>
             <set path="vehicle.animations.animation(10).part(2)#endTrans" value="-10.000 0 5.928"/>
 
+            <!-- add the aiMarker animations -->
+            <set path="vehicle.animations.animation(11)#name" value="defaultAiMarkerClear"/>
+            <set path="vehicle.animations.animation(11).part(0)#node" value="aiMarkerLeft"/>
+            <set path="vehicle.animations.animation(11).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(11).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(0)#endTrans" value="2.540 0 1.570"/>
+            <set path="vehicle.animations.animation(11).part(1)#node" value="aiMarkerRight"/>
+            <set path="vehicle.animations.animation(11).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(11).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(11).part(1)#endTrans" value="-2.540 0 1.570"/>
+
+            <set path="vehicle.animations.animation(12)#name" value="bonusAiMarkerClear"/>
+            <set path="vehicle.animations.animation(12).part(0)#node" value="aiMarkerLeft"/>
+            <set path="vehicle.animations.animation(12).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(12).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(0)#endTrans" value="3.540 0 1.570"/>
+            <set path="vehicle.animations.animation(12).part(1)#node" value="aiMarkerRight"/>
+            <set path="vehicle.animations.animation(12).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(12).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(1)#endTrans" value="-3.540 0 1.570"/>
+
+            <set path="vehicle.animations.animation(13)#name" value="extendedAiMarkerClear"/>
+            <set path="vehicle.animations.animation(13).part(0)#node" value="aiMarkerLeft"/>
+            <set path="vehicle.animations.animation(13).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(13).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(0)#endTrans" value="4.540 0 1.570"/>
+            <set path="vehicle.animations.animation(13).part(1)#node" value="aiMarkerRight"/>
+            <set path="vehicle.animations.animation(13).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(13).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(1)#endTrans" value="-4.540 0 1.570"/>
+
+            <set path="vehicle.animations.animation(14)#name" value="unrealAiMarkerClear"/>
+            <set path="vehicle.animations.animation(14).part(0)#node" value="aiMarkerLeft"/>
+            <set path="vehicle.animations.animation(14).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(14).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(14).part(0)#endTrans" value="10.000 0 1.570"/>
+            <set path="vehicle.animations.animation(14).part(1)#node" value="aiMarkerRight"/>
+            <set path="vehicle.animations.animation(14).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(14).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(14).part(1)#endTrans" value="-10.000 0 61.570"/>
+
+            <set path="vehicle.animations.animation(15)#name" value="defaultAiMarkerSet"/>
+            <set path="vehicle.animations.animation(15).part(0)#node" value="aiMarkerLeft"/>
+            <set path="vehicle.animations.animation(15).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(15).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(15).part(0)#endTrans" value="2.540 0 1.570"/>
+            <set path="vehicle.animations.animation(15).part(1)#node" value="aiMarkerRight"/>
+            <set path="vehicle.animations.animation(15).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(15).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(15).part(1)#endTrans" value="-2.540 0 1.570"/>
+
+            <set path="vehicle.animations.animation(16)#name" value="bonusAiMarkerSet"/>
+            <set path="vehicle.animations.animation(16).part(0)#node" value="aiMarkerLeft"/>
+            <set path="vehicle.animations.animation(16).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(16).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(16).part(0)#endTrans" value="3.540 0 1.570"/>
+            <set path="vehicle.animations.animation(16).part(1)#node" value="aiMarkerRight"/>
+            <set path="vehicle.animations.animation(16).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(16).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(16).part(1)#endTrans" value="-3.540 0 1.570"/>
+
+            <set path="vehicle.animations.animation(17)#name" value="extendedAiMarkerSet"/>
+            <set path="vehicle.animations.animation(17).part(0)#node" value="aiMarkerLeft"/>
+            <set path="vehicle.animations.animation(17).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(17).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(17).part(0)#endTrans" value="4.540 0 1.570"/>
+            <set path="vehicle.animations.animation(17).part(1)#node" value="aiMarkerRight"/>
+            <set path="vehicle.animations.animation(17).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(17).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(17).part(1)#endTrans" value="-4.540 0 1.570"/>
+
+            <set path="vehicle.animations.animation(18)#name" value="unrealAiMarkerSet"/>
+            <set path="vehicle.animations.animation(18).part(0)#node" value="aiMarkerLeft"/>
+            <set path="vehicle.animations.animation(18).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(18).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(18).part(0)#endTrans" value="10.000 0 1.570"/>
+            <set path="vehicle.animations.animation(18).part(1)#node" value="aiMarkerRight"/>
+            <set path="vehicle.animations.animation(18).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(18).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(18).part(1)#endTrans" value="-10.000 0 1.570"/>
+
             <!-- add in configuration sets -->
             <set path="vehicle.configurationSets.configurationSet(0)#name" value="$l10n_configuration_valueDefault"/>
             <set path="vehicle.configurationSets.configurationSet(0).configuration(0)#name" value="fillUnit"/>
@@ -272,6 +385,7 @@
             <set path="vehicle.baseMaterial.material(1).shaderParameter(1)#value" value="0.065 0.065 0.065"/>
 
             <!-- add in base material color selection -->
+            <set path="vehicle.baseMaterialConfigurations#price" value="0"/>
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_elho|$l10n_ui_colorOrange"/>
@@ -281,9 +395,9 @@
             <set path="vehicle.baseMaterialConfigurations.material(1)#name" value="scorpio550_mat2"/>
             <set path="vehicle.baseMaterialConfigurations.material(1)#shaderParameter" value="colorMat0"/>
 
-
             <!-- design material configuration -->
             <set path="vehicle.designMaterialConfigurations#title" value="Detail Color"/>
+            <set path="vehicle.designMaterialConfigurations#price" value="0"/>
             <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_elho|$l10n_ui_colorBlack"/>
@@ -295,7 +409,6 @@
             <set path="vehicle.designMaterialConfigurations.material(0)#shaderParameter" value="colorMat1"/>
             <set path="vehicle.designMaterialConfigurations.material(1)#name" value="scorpio550_mat2"/>
             <set path="vehicle.designMaterialConfigurations.material(1)#shaderParameter" value="colorMat1"/>
-
 
             <!-- rim configurations -->
             <set path="vehicle.wheels.hubs.colorMat0" value="SHARED_BLACK2"/>

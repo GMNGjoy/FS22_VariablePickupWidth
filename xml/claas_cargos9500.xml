@@ -344,7 +344,7 @@
 
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2)#name" value="$l10n_configuration_unrealCapacity" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#node" value="dischargeNode" />
-            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#emptySpeed" value="3105" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#emptySpeed" value="31050" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#fillUnitIndex" value="1" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#unloadInfoIndex" value="1" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(0)#allowAIDischarge" value="true" />
@@ -393,8 +393,8 @@
             <set path="vehicle.baseMaterial.material(2).shaderParameter(1)#value" value="CLAAS_WHITE1"/>
 
             <!-- base material configuration -->
-            <remove path="vehicle.baseMaterialConfigurations" />
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations#price" value="0"/>
             <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="31"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>
@@ -412,6 +412,7 @@
 
             <!-- design material configuration: sides -->
             <set path="vehicle.designMaterialConfigurations#title" value="Front Detail Color"/>
+            <set path="vehicle.designMaterialConfigurations#price" value="0"/>
             <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>
@@ -427,6 +428,7 @@
 
             <!-- design material configuration: scratching floor and back door -->
             <set path="vehicle.designMaterial2Configurations#title" value="Rear Detail Color"/>
+            <set path="vehicle.designMaterial2Configurations#price" value="0"/>
             <set path="vehicle.designMaterial2Configurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#name" value="%s %s"/>
             <set path="vehicle.designMaterial2Configurations.designMaterial2Configuration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>

@@ -10,14 +10,8 @@
             <set path="vehicle.storeData.functions.function(1)" value="$l10n_function_variablePickupWidth"/>
             <set path="vehicle.base.speedLimit#value" value="22"/>
 
-            <!-- default workArea from i3d
-            workAreaStart :: 1.4 0 2.114866
-            workAreaWidth :: -1.4 0 2.114866
-            workAreaHeight :: 1.4 0 1.822819
-            -->
-
             <!-- remove the 125 capacity limit as it's not needed -->
-            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnits(0)#capacity" />
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#capacity" />
 
             <!-- speed up the wrapping animation -->
             <set path="vehicle.baleWrapper.grabber#nearestDistance" value="0.6" />
@@ -49,7 +43,6 @@
             <set path="vehicle.baler.baleTypes.baleType(1).nodes#scaleComponents" value="0.95 0.95 0" />
             <set path="vehicle.baler.baleTypes.baleType(1).animations#fillAnimation" value="fillAnimation" />
             <set path="vehicle.baler.baleTypes.baleType(1).animations#unloadAnimation" value="unloadBale" />
-            <!-- <set path="vehicle.baler.baleTypes.baleType(1).animations#dropAnimationTime" vaelue="5.5" /> -->
 
             <!-- flip the bale on it's side -->
             <set path="vehicle.animations.animation(4).part(7)#endRot" value="-0.404 90 -122.739" />
@@ -216,6 +209,7 @@
             <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
 
             <!-- add in claas colors to the bale wrapper -->
+            <set path="vehicle.wrappingColorConfigurations#price" value="0"/>
             <set path="vehicle.wrappingColorConfigurations#useDefaultColors" value="true" />
             <set path="vehicle.wrappingColorConfigurations#defaultColorIndex" value="1" />
             <set path="vehicle.wrappingColorConfigurations.wrappingColorConfiguration(5)#name" value="%s %s"/>
@@ -235,9 +229,8 @@
             <set path="vehicle.wheels.hubs.color0" value="SHARED_BLACK1"/>
 
             <!-- base material configuration -->
-            <remove path="vehicle.baseMaterialConfigurations" />
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
-            <!-- <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/> -->
+            <set path="vehicle.baseMaterialConfigurations#price" value="0"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorGreen"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="CLAAS_GREEN1"/>
@@ -252,8 +245,8 @@
 
             <!-- design material configuration: tines -->
             <set path="vehicle.designMaterialConfigurations#title" value="Detail Color"/>
+            <set path="vehicle.designMaterialConfigurations#price" value="0"/>
             <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
-            <!-- <set path="vehicle.designMaterialConfigurations#defaultColorIndex" value="7"/> -->
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_claas|$l10n_ui_colorWhite"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="CLAAS_WHITE1"/>
