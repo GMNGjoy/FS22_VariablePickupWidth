@@ -239,7 +239,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1)#allowAILoading" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1)#showInShop" value="false"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1)#uiPrecision" value="2"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1).exactFillRootNode#node" value="exactFillRootNode"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).fillUnits.fillUnit(1).exactFillRootNode#node" value="exactFillRootNodeAdditives"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#node" value="silageAdditivesTank_vis"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#visibilityActive" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3).objectChange(0)#visibilityInactive" value="false"/>
@@ -277,7 +277,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1)#allowAILoading" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1)#showInShop" value="false"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1)#uiPrecision" value="2"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1).exactFillRootNode#node" value="exactFillRootNode"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(1).exactFillRootNode#node" value="exactFillRootNodeAdditives"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#node" value="silageAdditivesTank_vis"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#visibilityActive" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#visibilityInactive" value="false"/>
