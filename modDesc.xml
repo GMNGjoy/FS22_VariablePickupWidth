@@ -48,7 +48,7 @@ For license, feedback and additional VPW machinery, please visit: https://github
 CHANGELOG 1.0.0.1
 - Corrected prices for all color options to be free
 - Fixed fill target & unload speed of Ridonculous Capacity on the Claas Cargos 9500 VPW
-- Fixed AI worker fpr Elho Scorpio 550 VPW to respect VPW width]]>
+- Fixed AI worker for Elho Scorpio 550 VPW to respect VPW width]]>
 </en>
         <de>
 <![CDATA[Hast Du dir auch schon einmal gewünscht, dass die Arbeitsbreite der Pickup von Geräten etwas größer wäre? Variable Pickupbreite (VPW von engl. "Variable Pickup Width") ist die Lösung für Dich!
@@ -85,7 +85,12 @@ Hinweis: In seltenen Fällen kann es nach dem Speichern, Verlassen und erneuten 
 
 Jedes Gerät kostet 1€ mehr als im Basisspiel, arbeitet etwas schneller und unterstützt die volle Farbauswahl.
 
-Besucht für Lizenz, Feedback und zusätzliche VPW-Geräte https://github.com/GMNGjoy/FS22_VariablePickupWidth]]>
+Besucht für Lizenz, Feedback und zusätzliche VPW-Geräte https://github.com/GMNGjoy/FS22_VariablePickupWidth
+
+CHANGELOG 1.0.0.1
+- Alle Farbänderungen sind nun kostenlos
+- Füllmenge und Abladegeschwindigkeit der irrwitzigen Kapazität beim Claas Cargos 9500 CPW behoben
+- KI Helfer berücksichtigen nun beim Elho Scorpio 550 VPW die variable Arbeitsbreite]]>
         </de>
     </description>
     <iconFilename>icon_variablePickupWidth.dds</iconFilename>
