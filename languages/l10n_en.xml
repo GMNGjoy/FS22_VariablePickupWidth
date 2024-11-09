@@ -6,6 +6,7 @@
         <text name="workMode_bonus" text="Bonus Pickup" />
         <text name="workMode_extended" text="Extended Pickup" />
         <text name="workMode_unreal" text="Virtual Windrower" />
+        <text name="workMode_cheat" text="Certifiably Cheating" />
         <text name="function_variablePickupWidth" text="The pickup on this tool has a variable work width." />
 
         <text name="configuration_capacity" text="Capacity" />
@@ -13,6 +14,8 @@
         <text name="configuration_doubleCapacityAdditives" text="Double Capacity w/ Additives" />
         <text name="configuration_unrealCapacity" text="Ridonculous Capacity" />
         <text name="configuration_unrealCapacityAdditives" text="Ridonculous Capacity w/ Additives" />
+        <text name="configuration_cheatCapacity" text="Ludicrous Capacity" />
+        <text name="configuration_cheatCapacityAdditives" text="Ludicrous Capacity w/ Additives" />
 
         <text name="brand_poettinger" text="PÖTTINGER" />
         <text name="brand_masseyFerguson" text="Massey Ferguson" />

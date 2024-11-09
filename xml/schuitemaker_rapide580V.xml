@@ -25,8 +25,10 @@
             <set path="vehicle.workModes.workMode(0).animation(1)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(0).animation(2)#name" value="unrealWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
-            <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(4)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(0).animation(4)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(1)#name" value="$l10n_workMode_bonus"/>
             <set path="vehicle.workModes.workMode(1).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -35,8 +37,10 @@
             <set path="vehicle.workModes.workMode(1).animation(1)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(1).animation(2)#name" value="unrealWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(1).animation(2)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(1).animation(3)#name" value="bonusWorkAreaSet"/>
-            <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(4)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(1).animation(4)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(2)#name" value="$l10n_workMode_extended"/>
             <set path="vehicle.workModes.workMode(2).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -45,8 +49,10 @@
             <set path="vehicle.workModes.workMode(2).animation(1)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(2).animation(2)#name" value="unrealWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(2).animation(2)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(2).animation(3)#name" value="extendedWorkAreaSet"/>
-            <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(4)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(2).animation(4)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(3)#name" value="$l10n_workMode_unreal"/>
             <set path="vehicle.workModes.workMode(3).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -55,8 +61,22 @@
             <set path="vehicle.workModes.workMode(3).animation(1)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(3).animation(2)#name" value="extendedWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(3).animation(2)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(3).animation(3)#name" value="unrealWorkAreaSet"/>
-            <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(4)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(3).animation(4)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(4)#name" value="$l10n_workMode_cheat"/>
+            <set path="vehicle.workModes.workMode(4).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(4).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(4).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(4).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(4).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(4).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(4).animation(3)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(4).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(4).animation(4)#name" value="cheatWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(4).animation(4)#speed" value="1"/>
 
             <!-- add the workMode animations -->
             <set path="vehicle.animations.animation(4)#name" value="defaultWorkAreaClear"/>
@@ -171,6 +191,35 @@
             <set path="vehicle.animations.animation(11).part(2)#endTime" value="0.2"/>
             <set path="vehicle.animations.animation(11).part(2)#endTrans" value="10.0 0 -0.26754"/>
 
+            <!-- add cheat mode -->
+            <set path="vehicle.animations.animation(12)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.animations.animation(12).part(0)#node" value="workArea01Start"/>
+            <set path="vehicle.animations.animation(12).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(12).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(0)#endTrans" value="25.0 0 1.73246"/>
+            <set path="vehicle.animations.animation(12).part(1)#node" value="workArea01Width"/>
+            <set path="vehicle.animations.animation(12).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(12).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(1)#endTrans" value="-25.0 0 1.73246"/>
+            <set path="vehicle.animations.animation(12).part(2)#node" value="workArea01Height"/>
+            <set path="vehicle.animations.animation(12).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(12).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(12).part(2)#endTrans" value="25.0 0 -0.26754"/>
+
+            <set path="vehicle.animations.animation(13)#name" value="cheatWorkAreaSet"/>
+            <set path="vehicle.animations.animation(13).part(0)#node" value="workArea01Start"/>
+            <set path="vehicle.animations.animation(13).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(13).part(0)#endTrans" value="25.0 0 1.73246"/>
+            <set path="vehicle.animations.animation(13).part(1)#node" value="workArea01Width"/>
+            <set path="vehicle.animations.animation(13).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(13).part(1)#endTrans" value="-25.0 0 1.73246"/>
+            <set path="vehicle.animations.animation(13).part(2)#node" value="workArea01Height"/>
+            <set path="vehicle.animations.animation(13).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(13).part(2)#endTrans" value="25.0 0 -0.26754"/>
+
             <!-- make sure it never misses -->
             <set path="vehicle.forageWagon#maxPickupLitersPerSecond" value="5000"/>
             <set path="vehicle.groundReferenceNodes.groundReferenceNode(0)#threshold" value="1.0"/>
@@ -211,6 +260,18 @@
             <set path="vehicle.configurationSets.configurationSet(5).configuration(0)#index" value="6"/>
             <set path="vehicle.configurationSets.configurationSet(5).configuration(1)#name" value="dischargeable"/>
             <set path="vehicle.configurationSets.configurationSet(5).configuration(1)#index" value="3"/>
+
+            <set path="vehicle.configurationSets.configurationSet(6)#name" value="$l10n_configuration_cheatCapacity"/>
+            <set path="vehicle.configurationSets.configurationSet(6).configuration(0)#name" value="fillUnit"/>
+            <set path="vehicle.configurationSets.configurationSet(6).configuration(0)#index" value="7"/>
+            <set path="vehicle.configurationSets.configurationSet(6).configuration(1)#name" value="dischargeable"/>
+            <set path="vehicle.configurationSets.configurationSet(6).configuration(1)#index" value="4"/>
+
+            <set path="vehicle.configurationSets.configurationSet(7)#name" value="$l10n_configuration_cheatCapacityAdditives"/>
+            <set path="vehicle.configurationSets.configurationSet(7).configuration(0)#name" value="fillUnit"/>
+            <set path="vehicle.configurationSets.configurationSet(7).configuration(0)#index" value="8"/>
+            <set path="vehicle.configurationSets.configurationSet(7).configuration(1)#name" value="dischargeable"/>
+            <set path="vehicle.configurationSets.configurationSet(7).configuration(1)#index" value="4"/>
 
             <!-- add in fill unit configurations -->
             <set path="vehicle.fillUnit.fillUnitConfigurations#name" value="$l10n_configuration_capacity"/>
@@ -268,6 +329,7 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0)#fillTypeCategories" value="forageWagon"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0)#capacity" value="350000"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0)#allowAILoading" value="true"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0)#updateMass" value="false"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTarget"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="1.2"/>
@@ -282,6 +344,42 @@
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#node" value="silageAdditivesTank_vis"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#visibilityActive" value="true"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5).objectChange(0)#visibilityInactive" value="false"/>
+
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6)#name" value="$l10n_configuration_cheatCapacity"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6)#price" value="50000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0)#shopDisplayUnit" value="CUBICMETER"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0)#fillTypeCategories" value="forageWagon"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0)#capacity" value="3500000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0)#allowAILoading" value="true"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0)#updateMass" value="false"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTarget"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="0.662"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0).autoAimTargetNode#endZ" value="-1.518"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0).autoAimTargetNode#invert" value="false"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6).fillUnits.fillUnit(0).autoAimTargetNode#startPercentage" value="20"/>
+
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7)#name" value="$l10n_configuration_cheatCapacityAdditives"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7)#price" value="51000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0)#shopDisplayUnit" value="CUBICMETER"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0)#fillTypeCategories" value="forageWagon"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0)#capacity" value="3500000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0)#allowAILoading" value="true"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0)#updateMass" value="false"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0).exactFillRootNode#node" value="exactFillRootNode"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0).autoAimTargetNode#node" value="fillAutoAimTarget"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0).autoAimTargetNode#startZ" value="1.2"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0).autoAimTargetNode#endZ" value="-3.0"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0).autoAimTargetNode#invert" value="false"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(0).autoAimTargetNode#startPercentage" value="20"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(1)#unitTextOverride" value="l10n_unit_literShort"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(1)#fillTypes" value="SILAGE_ADDITIVE"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(1)#capacity" value="1000"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(1)#showInShop" value="false"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).fillUnits.fillUnit(1)#uiPrecision" value="2"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).objectChange(0)#node" value="silageAdditivesTank_vis"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).objectChange(0)#visibilityActive" value="true"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7).objectChange(0)#visibilityInactive" value="false"/>
 
             <!-- set relative discharge rates -->
             <remove path="vehicle.dischargeable" />
@@ -553,6 +651,96 @@
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(2).dischargeStateSound#volumeScale" value="1.7" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(2).dischargeStateSound#fadeIn" value="2" />
             <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(2).dischargeNode(2).dischargeStateSound#fadeOut" value="2.7" />
+
+            <!-- cheat discharge rate -->
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3)#name" value="$l10n_configuration_cheatCapacity" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0)#node" value="dischargeNode" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0)#emptySpeed" value="233000" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0)#fillUnitIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0)#unloadInfoIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0)#allowAIDischarge" value="true" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).info#width" value="1.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).info#length" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0)#effectClass" value="TipEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(0)#effectNode" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(0)#effectClass" value="ParticleEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(0)#materialType" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(0)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(0)#delay" value="0.1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(0)#lifespan" value="0.11" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(0)#worldSpace" value="false" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(1)#effectNode" value="unloadingEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(1)#materialType" value="unloading" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(1)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(1)#delay" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(0).effectNode(1)#extraDistanceNode" value="dischargeNode" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(1)#effectNode" value="smokeEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(1)#materialType" value="unloadingSmoke" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(1)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).effects.effectNode(1)#delay" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).dischargeStateSound#template" value="dischargeLoop" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).dischargeStateSound#pitchScale" value="1.0" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).dischargeStateSound#volumeScale" value="1.7" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).dischargeStateSound#fadeIn" value="2" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(0).dischargeStateSound#fadeOut" value="2.7" />
+
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1)#node" value="dischargeNodeLeft" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1)#emptySpeed" value="75000" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1)#fillUnitIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1)#unloadInfoIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).info#width" value="1.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).info#length" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(0)#effectNode" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(0)#effectClass" value="ParticleEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(0)#materialType" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(0)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(0)#delay" value="0.1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(0)#lifespan" value="0.20" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(0)#worldSpace" value="false" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(0)#ignoreDistanceLifeSpan" value="true" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(1)#effectNode" value="unloadingEffectLeft" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(1)#materialType" value="unloading" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(1)#fadeTime" value="1.0" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(1)#extraDistance" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(1)#extraDistanceNode" value="dischargeNodeLeft" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(2)#effectNode" value="smokeEffectLeft" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(2)#materialType" value="unloadingSmoke" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(2)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).effects.effectNode(2)#delay" value="0.75" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).dischargeStateSound#template" value="dischargeLoop" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).dischargeStateSound#pitchScale" value="1.0" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).dischargeStateSound#volumeScale" value="1.7" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).dischargeStateSound#fadeIn" value="2" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(1).dischargeStateSound#fadeOut" value="2.7" />
+
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2)#node" value="dischargeNodeRight" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2)#emptySpeed" value="75000" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2)#fillUnitIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2)#unloadInfoIndex" value="1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).info#width" value="1.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).info#length" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(0)#effectNode" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(0)#effectClass" value="ParticleEffect" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(0)#materialType" value="unloadingParticle" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(0)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(0)#delay" value="0.1" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(0)#lifespan" value="0.20" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(0)#worldSpace" value="false" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(0)#ignoreDistanceLifeSpan" value="true" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(1)#effectNode" value="unloadingEffectRight" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(1)#materialType" value="unloading" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(1)#fadeTime" value="1.0" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(1)#extraDistance" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(1)#extraDistanceNode" value="dischargeNodeRight" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(2)#effectNode" value="smokeEffectRight" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(2)#materialType" value="unloadingSmoke" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(2)#fadeTime" value="0.5" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).effects.effectNode(2)#delay" value="0.75" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).dischargeStateSound#template" value="dischargeLoop" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).dischargeStateSound#pitchScale" value="1.0" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).dischargeStateSound#volumeScale" value="1.7" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).dischargeStateSound#fadeIn" value="2" />
+            <set path="vehicle.dischargeable.dischargeableConfigurations.dischargeableConfiguration(3).dischargeNode(2).dischargeStateSound#fadeOut" value="2.7" />
 
             <!-- make sure it never misses -->
             <set path="vehicle.forageWagon#maxPickupLitersPerSecond" value="5000"/>

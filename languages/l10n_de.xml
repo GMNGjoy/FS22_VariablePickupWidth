@@ -8,6 +8,7 @@
         <text name="workMode_bonus" text="Zusätzliche Arbeitsbreite" />
         <text name="workMode_extended" text="Erweiterte Arbeitsbreite" />
         <text name="workMode_unreal" text="Virtueller Schwader" />
+        <text name="workMode_cheat" text="Cheat Mode Activated" />
         <text name="function_variablePickupWidth" text="Die Pickup dieses Geräts verfügt über eine variable Arbeitsbreite." />
 
         <text name="configuration_capacity" text="Kapazität" />
@@ -15,6 +16,8 @@
         <text name="configuration_doubleCapacityAdditives" text="Doppelte Kapazität mit Siliermitteltank" />
         <text name="configuration_unrealCapacity" text="Irrwitzige Kapazität" />
         <text name="configuration_unrealCapacityAdditives" text="Irrwitzige Kapazität mit Siliermitteltank" />
+        <text name="configuration_cheatCapacity" text="Stupid Capacity" />
+        <text name="configuration_cheatCapacityAdditives" text="Stupid Capacity w/ Additives" />
 
         <text name="brand_poettinger" text="PÖTTINGER" />
         <text name="brand_masseyFerguson" text="Massey Ferguson" />

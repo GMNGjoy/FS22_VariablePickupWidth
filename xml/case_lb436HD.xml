@@ -24,8 +24,10 @@
             <set path="vehicle.workModes.workMode(0).animation(1)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(0).animation(2)#name" value="unrealWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(0).animation(2)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(0).animation(3)#name" value="defaultWorkAreaSet"/>
-            <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(0).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(0).animation(4)#name" value="defaultWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(0).animation(4)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(1)#name" value="$l10n_workMode_bonus"/>
             <set path="vehicle.workModes.workMode(1).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -34,8 +36,10 @@
             <set path="vehicle.workModes.workMode(1).animation(1)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(1).animation(2)#name" value="unrealWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(1).animation(2)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(1).animation(3)#name" value="bonusWorkAreaSet"/>
-            <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(1).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(1).animation(4)#name" value="bonusWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(1).animation(4)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(2)#name" value="$l10n_workMode_extended"/>
             <set path="vehicle.workModes.workMode(2).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -44,8 +48,10 @@
             <set path="vehicle.workModes.workMode(2).animation(1)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(2).animation(2)#name" value="unrealWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(2).animation(2)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(2).animation(3)#name" value="extendedWorkAreaSet"/>
-            <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(2).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(2).animation(4)#name" value="extendedWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(2).animation(4)#speed" value="1"/>
 
             <set path="vehicle.workModes.workMode(3)#name" value="$l10n_workMode_unreal"/>
             <set path="vehicle.workModes.workMode(3).animation(0)#name" value="defaultWorkAreaClear"/>
@@ -54,8 +60,22 @@
             <set path="vehicle.workModes.workMode(3).animation(1)#speed" value="-1"/>
             <set path="vehicle.workModes.workMode(3).animation(2)#name" value="extendedWorkAreaClear"/>
             <set path="vehicle.workModes.workMode(3).animation(2)#speed" value="-1"/>
-            <set path="vehicle.workModes.workMode(3).animation(3)#name" value="unrealWorkAreaSet"/>
-            <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="1"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(3).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(3).animation(4)#name" value="unrealWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(3).animation(4)#speed" value="1"/>
+
+            <set path="vehicle.workModes.workMode(4)#name" value="$l10n_workMode_cheat"/>
+            <set path="vehicle.workModes.workMode(4).animation(0)#name" value="defaultWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(4).animation(0)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(4).animation(1)#name" value="bonusWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(4).animation(1)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(4).animation(2)#name" value="extendedWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(4).animation(2)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(4).animation(3)#name" value="unrealWorkAreaClear"/>
+            <set path="vehicle.workModes.workMode(4).animation(3)#speed" value="-1"/>
+            <set path="vehicle.workModes.workMode(4).animation(4)#name" value="cheatWorkAreaSet"/>
+            <set path="vehicle.workModes.workMode(4).animation(4)#speed" value="1"/>
 
             <!-- add the workMode animations -->
             <set path="vehicle.animations.animation(5)#name" value="defaultWorkAreaClear"/>
@@ -169,6 +189,35 @@
             <set path="vehicle.animations.animation(12).part(2)#startTime" value="0.1"/>
             <set path="vehicle.animations.animation(12).part(2)#endTime" value="0.2"/>
             <set path="vehicle.animations.animation(12).part(2)#endTrans" value="10.0 0 0.15"/>
+
+            <!-- add cheat mode -->
+            <set path="vehicle.animations.animation(13)#name" value="cheatWorkAreaClear"/>
+            <set path="vehicle.animations.animation(13).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(13).part(0)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(13).part(0)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(0)#endTrans" value="25.0 0 2.15"/>
+            <set path="vehicle.animations.animation(13).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(13).part(1)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(13).part(1)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(1)#endTrans" value="-25.0 0 2.15"/>
+            <set path="vehicle.animations.animation(13).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(13).part(2)#startTime" value="0"/>
+            <set path="vehicle.animations.animation(13).part(2)#endTime" value="0.1"/>
+            <set path="vehicle.animations.animation(13).part(2)#endTrans" value="25.0 0 0.15"/>
+
+            <set path="vehicle.animations.animation(14)#name" value="cheatWorkAreaSet"/>
+            <set path="vehicle.animations.animation(14).part(0)#node" value="workAreaStart"/>
+            <set path="vehicle.animations.animation(14).part(0)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(14).part(0)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(14).part(0)#endTrans" value="25.0 0 2.15"/>
+            <set path="vehicle.animations.animation(14).part(1)#node" value="workAreaWidth"/>
+            <set path="vehicle.animations.animation(14).part(1)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(14).part(1)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(14).part(1)#endTrans" value="-25.0 0 2.15"/>
+            <set path="vehicle.animations.animation(14).part(2)#node" value="workAreaHeight"/>
+            <set path="vehicle.animations.animation(14).part(2)#startTime" value="0.1"/>
+            <set path="vehicle.animations.animation(14).part(2)#endTime" value="0.2"/>
+            <set path="vehicle.animations.animation(14).part(2)#endTrans" value="25.0 0 0.15"/>
 
             <!-- make sure it never misses -->
             <set path="vehicle.baler#maxPickupLitersPerSecond" value="5000"/>
