@@ -178,7 +178,6 @@
             <set path="vehicle.workAreas.workArea(0)#disableBackwards" value="false" />
 
             <!-- base material configuration -->
-            <remove path="vehicle.baseMaterialConfigurations" />
             <set path="vehicle.baseMaterialConfigurations#price" value="0"/>
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="%s %s"/>
