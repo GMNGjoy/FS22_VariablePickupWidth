@@ -189,7 +189,7 @@
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#params" value="$l10n_brand_masseyFerguson|$l10n_ui_colorRed"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="MASSEYFERGUSON_RED"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#name" value="%s %s"/>
-            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#params" value="$l10n_brand_masseyFerguson|$l10n_color_grey"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#params" value="$l10n_brand_masseyFerguson|$l10n_ui_colorGrey"/>
             <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#color" value="MASSEYFERGUSON_GREY_4"/>
             <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="baler1840_mat"/>
             <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
@@ -200,7 +200,7 @@
             <set path="vehicle.designMaterialConfigurations#price" value="0"/>
             <set path="vehicle.designMaterialConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#name" value="%s %s"/>
-            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_masseyFerguson|$l10n_color_grey"/>
+            <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#params" value="$l10n_brand_masseyFerguson|$l10n_ui_colorGrey"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(0)#color" value="MASSEYFERGUSON_GREY_4"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#name" value="%s %s"/>
             <set path="vehicle.designMaterialConfigurations.designMaterialConfiguration(1)#params" value="$l10n_brand_masseyFerguson|$l10n_ui_colorRed"/>
@@ -214,7 +214,7 @@
             <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
             <set path="vehicle.rimColorConfigurations#price" value="0"/>
             <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#name" value="%s %s"/>
-            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#params" value="$l10n_brand_masseyFerguson|$l10n_color_grey"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#params" value="$l10n_brand_masseyFerguson|$l10n_ui_colorGrey"/>
             <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#color" value="MASSEYFERGUSON_GREY_4"/>
             <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#name" value="%s %s"/>
             <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#params" value="$l10n_brand_masseyFerguson|$l10n_ui_colorRed"/>

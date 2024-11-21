@@ -21,5 +21,6 @@
         <text name="brand_elho" text="Elho" />
         <text name="brand_krone" text="Krone" />
         <text name="brand_schuitemaker" text="Schuitemaker" />
+        <text name="brand_case" text="Case" />
     </texts>
 </l10n>
